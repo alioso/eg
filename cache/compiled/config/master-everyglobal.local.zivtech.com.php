@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1502852859,
-    'checksum' => '92ee349aa348483297f8e5f1c5e1d467',
+    'timestamp' => 1502855156,
+    'checksum' => 'b4e7638de41f19604608f9b776d34505',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1502852814
+                'modified' => 1502855156
+            ],
+            'themes/sidewalk' => [
+                'file' => 'user/config/themes/sidewalk.yaml',
+                'modified' => 1502854068
             ]
         ],
         'system/config' => [
@@ -580,7 +584,7 @@ return [
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'solid-state',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -736,6 +740,12 @@ return [
         ],
         'security' => [
             'salt' => 'KNpTFaOP85uS7r'
+        ],
+        'themes' => [
+            'sidewalk' => [
+                'enabled' => true,
+                'robots' => 'index, follow'
+            ]
         ]
     ]
 ];
