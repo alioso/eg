@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://eg/eg.yaml',
-    'modified' => 1502937888,
+    'modified' => 1502941793,
     'data' => [
         'streams' => [
             'schemes' => [
