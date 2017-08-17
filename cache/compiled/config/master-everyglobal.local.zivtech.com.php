@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1502855156,
-    'checksum' => 'b4e7638de41f19604608f9b776d34505',
+    'timestamp' => 1502939592,
+    'checksum' => 'b3179851b3760ed49eae8827c05559ed',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1502852859
+                'modified' => 1502855794
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1502855156
+                'modified' => 1502939587
             ],
             'themes/sidewalk' => [
                 'file' => 'user/config/themes/sidewalk.yaml',
@@ -33,25 +33,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1500466702
+                'modified' => 1502938472
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1500466702
+                'modified' => 1502938472
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1500466702
+                'modified' => 1502938472
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1500466702
+                'modified' => 1502938472
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1500466702
+                'modified' => 1502938503
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -116,6 +116,7 @@ return [
                 'edit_mode' => 'normal',
                 'frontend_pages_target' => '_blank',
                 'show_github_msg' => true,
+                'pages_list_display_field' => 'title',
                 'google_fonts' => true,
                 'enable_auto_updates_check' => true,
                 'notifications' => [
@@ -526,9 +527,7 @@ return [
                 'size' => 300,
                 'delimiter' => '==='
             ],
-            'redirects' => [
-                0 => '1420 Boren Ave, APT 210'
-            ],
+            'redirects' => NULL,
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
@@ -580,11 +579,11 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/home',
+                'alias' => '/landing-pages',
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'solid-state',
+                'theme' => 'eg',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -629,6 +628,7 @@ return [
                 ],
                 'append_url_extension' => '',
                 'expires' => 604800,
+                'cache_control' => NULL,
                 'last_modified' => false,
                 'etag' => false,
                 'vary_accept_encoding' => false,
@@ -653,12 +653,13 @@ return [
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
                 'driver' => 'auto',
                 'prefix' => 'g',
+                'clear_images_by_default' => true,
                 'cli_compatibility' => false,
                 'lifetime' => 604800,
                 'gzip' => false,

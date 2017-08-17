@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/config/system.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938472,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -75,6 +75,7 @@ return [
             ],
             'append_url_extension' => '',
             'expires' => 604800,
+            'cache_control' => NULL,
             'last_modified' => false,
             'etag' => false,
             'vary_accept_encoding' => false,
@@ -105,6 +106,7 @@ return [
             ],
             'driver' => 'auto',
             'prefix' => 'g',
+            'clear_images_by_default' => true,
             'cli_compatibility' => false,
             'lifetime' => 604800,
             'gzip' => false,

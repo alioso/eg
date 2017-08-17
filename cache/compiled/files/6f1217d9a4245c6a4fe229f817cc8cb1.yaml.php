@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/languages/ru.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938504,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Это бета-релиз! Вы используете это расширение на свой страх и риск...',

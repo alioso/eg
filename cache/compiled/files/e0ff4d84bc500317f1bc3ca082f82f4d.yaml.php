@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/config/system.yaml',
-    'modified' => 1502855135,
+    'modified' => 1502939587,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -26,11 +26,11 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/home',
+            'alias' => '/landing-pages',
             'hide_in_urls' => false
         ],
         'pages' => [
-            'theme' => 'antimatter',
+            'theme' => 'eg',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'
@@ -99,7 +99,7 @@ return [
             ]
         ],
         'cache' => [
-            'enabled' => true,
+            'enabled' => false,
             'check' => [
                 'method' => 'file'
             ],

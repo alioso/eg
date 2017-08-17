@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/languages/sv.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938472,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '--- titel: %1$s --- # Fel: Ogiltig Frontmatter-sökväg: `%2$s` **%3$s** ``` %4$s ```',
         'NICETIME' => [

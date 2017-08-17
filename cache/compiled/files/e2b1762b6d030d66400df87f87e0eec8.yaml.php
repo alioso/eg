@@ -2,9 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/config/site.yaml',
-    'modified' => 1502852859,
+    'modified' => 1502855794,
     'data' => [
         'title' => 'EveryGlobal',
+        'default_lang' => 'en',
         'author' => [
             'name' => 'Won Lee',
             'email' => 'albanbailly@gmail.com'
@@ -21,9 +22,6 @@ return [
             'format' => 'short',
             'size' => 300,
             'delimiter' => '==='
-        ],
-        'redirects' => [
-            0 => '1420 Boren Ave, APT 210'
         ],
         'blog' => [
             'route' => '/blog'

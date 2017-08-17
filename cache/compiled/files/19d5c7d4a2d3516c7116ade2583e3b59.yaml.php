@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/blueprints.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938503,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.5.1',
+        'version' => '1.5.2',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
@@ -204,6 +204,12 @@ return [
                         'type' => 'bool'
                     ],
                     'help' => 'Show the "Found an issue? Please report it on GitHub." message.'
+                ],
+                'pages_list_display_field' => [
+                    'type' => 'text',
+                    'size' => 'small',
+                    'label' => 'Pages List Display Field',
+                    'help' => 'Field of the page to use in the list of pages if present. Defaults/Fallback to title.'
                 ],
                 'enable_auto_updates_check' => [
                     'type' => 'toggle',

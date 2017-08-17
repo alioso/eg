@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/languages/en.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938504,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -329,6 +329,8 @@ return [
             'HTTP_HEADERS' => 'HTTP Headers',
             'EXPIRES' => 'Expires',
             'EXPIRES_HELP' => 'Sets the expires header. The value is in seconds.',
+            'CACHE_CONTROL' => 'HTTP Cache-Control',
+            'CACHE_CONTROL_HELP' => 'Set to a valid cache-control value such as `no-cache, no-store, must-revalidate`',
             'LAST_MODIFIED' => 'Last modified',
             'LAST_MODIFIED_HELP' => 'Sets the last modified header that can help optimize proxy and browser caching',
             'ETAG' => 'ETag',
@@ -644,6 +646,8 @@ return [
             'ALLOW_WEBSERVER_GZIP' => 'Allow WebServer Gzip',
             'ALLOW_WEBSERVER_GZIP_HELP' => 'Off by default. When enabled, WebServer-configured Gzip/Deflate compression will work, but http connection will not be closed before onShutDown() event causing slower page loading',
             'OFFLINE_WARNING' => 'The connection to the GPM cannot be established',
+            'CLEAR_IMAGES_BY_DEFAULT' => 'Clear image cache by default',
+            'CLEAR_IMAGES_BY_DEFAULT_HELP' => 'By default processed images are cleared for all cache clears, this can be disabled',
             'CLI_COMPATIBILITY' => 'CLI Compatibility',
             'CLI_COMPATIBILITY_HELP' => 'Ensures that only non-volatile Cache drivers are used (file, redis, memcache, etc.)',
             'REINSTALL_PLUGIN' => 'Reinstall Plugin',

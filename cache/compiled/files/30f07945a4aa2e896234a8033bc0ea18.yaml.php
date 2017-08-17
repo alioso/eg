@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/blueprints/config/system.yaml',
-    'modified' => 1500466702,
+    'modified' => 1502938472,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -440,6 +440,13 @@ return [
                                 'min' => 1
                             ]
                         ],
+                        'pages.cache_control' => [
+                            'type' => 'text',
+                            'size' => 'medium',
+                            'label' => 'PLUGIN_ADMIN.CACHE_CONTROL',
+                            'help' => 'PLUGIN_ADMIN.CACHE_CONTROL_HELP',
+                            'placeholder' => 'e.g. public, max-age=31536000'
+                        ],
                         'pages.last_modified' => [
                             'type' => 'toggle',
                             'label' => 'PLUGIN_ADMIN.LAST_MODIFIED',
@@ -595,6 +602,19 @@ return [
                             'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
                             'help' => 'PLUGIN_ADMIN.CACHE_PREFIX_HELP',
                             'placeholder' => 'PLUGIN_ADMIN.CACHE_PREFIX_PLACEHOLDER'
+                        ],
+                        'cache.clear_images_by_default' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.CLEAR_IMAGES_BY_DEFAULT',
+                            'help' => 'PLUGIN_ADMIN.CLEAR_IMAGES_BY_DEFAULT_HELP',
+                            'highlight' => 1,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
                         ],
                         'cache.cli_compatibility' => [
                             'type' => 'toggle',
@@ -1139,7 +1159,7 @@ return [
                             'help' => 'PLUGIN_ADMIN.TIMEOUT_HELP',
                             'validate' => [
                                 'type' => 'number',
-                                'min' => 1
+                                'min' => 0
                             ]
                         ],
                         'session.name' => [

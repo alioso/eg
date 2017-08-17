@@ -1,4 +1,5 @@
 title: EveryGlobal
+default_lang: en
 author:
   name: 'Won Lee'
   email: albanbailly@gmail.com
@@ -12,7 +13,5 @@ summary:
   format: short
   size: 300
   delimiter: '==='
-redirects:
-  - '1420 Boren Ave, APT 210'
 blog:
   route: /blog

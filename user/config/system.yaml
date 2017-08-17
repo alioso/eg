@@ -17,10 +17,10 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias: /home
+  alias: /landing-pages
   hide_in_urls: false
 pages:
-  theme: solid-state
+  theme: eg
   order:
     by: default
     dir: asc
@@ -76,7 +76,7 @@ pages:
       - form
       - forms
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto
