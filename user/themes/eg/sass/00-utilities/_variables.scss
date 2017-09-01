@@ -1,0 +1,70 @@
+
+
+//
+// BASE COLORS
+//
+$black:              hsla(0, 0%, 0%, 1);
+$zeus:               hsla(18, 21%, 12%, 1);
+$emperor:            hsla(0, 0%, 33%, 1);
+$grey:               hsla(0, 0%, 53%, 1);
+$gallery:            hsla(0, 0%, 92%, 1);
+$wild-sand:          hsla(0, 0%, 96%, 1);
+$white:              hsla(0, 100%, 100%, 1);
+$bermuda-grey:       hsla(212, 26%, 56%, 1);
+$dark-bermuda-grey:  darken($bermuda-grey, 20%);
+$light-bermuda-grey: lighten($bermuda-grey, 20%);
+$emerald:            hsla(147, 52%, 51%, 1);
+$saffron:            hsla(40, 94%, 59%, 1);
+$tangerine:          hsla(40, 100%, 44%, 1);
+$outrageous-orange:  hsla(13, 100%, 63%, 1);
+$persian-red:        hsla(0, 64%, 51%, 1);
+
+$default-body: $zeus;
+$link: $bermuda-grey;
+$link-hover: $dark-bermuda-grey;
+
+// NOWANTHEN COLORS
+$desert-storm: hsla(60, 11%, 96%, 1);
+$quill-gray: hsla(60, 5%, 81%, 1);
+$bandicoot: hsla(60, 7%, 47%, 1);
+$tundora: hsla(0, 0%, 28%, 1);
+$cararra: hsla(60, 15%, 92%, 1);
+$cerulean-blue: hsla(214, 63%, 43%, 1);
+
+//
+// LAYOUT
+//
+$site-min-width: 25em;
+$site-max-width: 1200px / 16px * 1em;
+
+$captionHeight: 159px;
+
+//
+// TYPOGRAPHY
+//
+$serif: 'Quattrocento', serif;
+$sans: 'Fjalla One', sans-serif;
+$sans-copy: 'Helvetica', sans-serif;
+// other typography settings see ../vendor/scss/gutenberg/_gutenberg-typography.scss
+
+//
+// LAYOUT
+//
+
+// Configure max-width in sass/vendor/scss/gutemberg/_gutenberg-config.scss
+
+//
+// BREAKPOINTS
+//
+
+@import '../vendor/scss/gutenberg/gutenberg-config';
+
+$bp-540:    min-width 540 / $base * 1em !default;
+$bp-768:    min-width 768 / $base * 1em !default;
+$bp-1024:   min-width 1024 / $base * 1em !default;
+$bp-1200:   min-width 1200 / $base * 1em !default;
+$bp-1500:   min-width 1500 / $base * 1em !default;
+$bp-1800:   min-width 1800 / $base * 1em !default;
+
+$bp-max-width:  max-width 1248 / $base * 1em !default;
+$bp-mobile-search:  max-width 1024 / $base * 1em !default;
