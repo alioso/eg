@@ -1,0 +1,87 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: $white-haze;
+  font-family: $serif;
+}
+
+h1,
+h4 {
+  font-family: $sans;
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-family: $serif;
+  font-weight: 400;
+}
+
+b,
+strong {
+  -webkit-font-smoothing: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+.sans {
+  font-family: $sans;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-link-normal;
+  transition: color .3s;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-link-normal;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+
+    &:visited {
+      color: $color-link-hover;
+    }
+  }
+}
+
+@mixin ui-typography($light, $normal, $dark, $ui-lightest-grey, $ui-light-grey, $ui-grey) {
+
+$color-names: light normal dark lightest-grey light-grey grey;
+$colors: $light $normal $dark $ui-lightest-grey $ui-light-grey $ui-grey;
+
+
+@for $i from 1 through length($colors) {
+
+  .#{nth($color-names, $i)} {
+    color: nth($colors, $i);
+  }
+
+  .bg {
+
+    &--#{nth($color-names, $i)} {
+      background-color: nth($colors, $i);
+    }
+  }
+}
+
+
+} // close the mixin

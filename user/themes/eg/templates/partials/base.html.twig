@@ -47,12 +47,19 @@
   {% endblock %}
 
   {% include 'partials/footer.html.twig' %}
+  <div id="video-container">
+    <video preload="auto" width="1440" height="810" autoplay loop muted>
+      <source src="user/themes/eg/assets/videos/eg.mp4" type="video/mp4">
+      {#<source src="video.webm" type="video/webm">#}
+    </video>
+  </div>
 </div>
 
 <!-- Scripts -->
 {% do assets.addJs('theme://assets/js/skel.min.js') %}
 {% do assets.addJs('theme://assets/js/jquery.min.js') %}
 {% do assets.addJs('theme://assets/js/main.js') %}
+{% do assets.addJs('theme://assets/js/video.js') %}
 {{ assets.js() }}
 
 </body>

@@ -26,7 +26,7 @@ $cod-gray: hsla(0, 0%, 10%, 1);
 $white-haze: hsla(180, 8%, 97%, 1);
 $tangerine: hsla(32, 100%, 48%, 1);
 
-$default-body: $cod-gray;
+$default-body: $white;
 $link: $bermuda-grey;
 $link-hover: $dark-bermuda-grey;
 
@@ -34,7 +34,7 @@ $link-hover: $dark-bermuda-grey;
 // LAYOUT
 //
 $site-min-width: 25em;
-$site-max-width: 1200px / 16px * 1em;
+$site-max-width: 1000px / 16px * 1em;
 
 //
 // TYPOGRAPHY

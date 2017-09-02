@@ -7,6 +7,7 @@
     margin: 0;
     position: fixed;
     top: 0;
+    left: 0;
     text-align: center;
     width: 100%;
     background: $tangerine;
@@ -20,14 +21,14 @@
 
   &__link {
     @include link(white, none, white, underline);
-    
+
     text-transform: uppercase;
   }
 
   &__close {
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 0vh;
     width: 40px;
     height: 40px;
     border: 1px solid $white;
