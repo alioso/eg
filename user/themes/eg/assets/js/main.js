@@ -12,7 +12,13 @@
 
 	$(function() {
 
+		var $mainMenuUl = $('#mainMenuUl');
+		var $mainMenuClose = $('#mainMenuClose');
 
+    $mainMenuClose.on('click', function() {
+    	$(this).toggleClass('active');
+      $mainMenuUl.toggleClass('visible');
+		});
 
 	});
 

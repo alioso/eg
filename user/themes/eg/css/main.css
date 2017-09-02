@@ -671,7 +671,7 @@ small {
 
 body {
   overflow-x: hidden;
-  background-color: #f6f6f4;
+  background: #ccc;
 }
 
 @keyframes fadeIn {
@@ -694,7 +694,7 @@ body {
 
 body {
   overflow-x: hidden;
-  background-color: #f6f6f4;
+  background: #ccc;
 }
 
 .u-hidden,
@@ -1107,18 +1107,18 @@ body {
 
 body {
   color: black;
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 h1,
 h4 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 400;
 }
 
 h2,
 h3 {
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
 }
 
@@ -1132,11 +1132,11 @@ strong {
 }
 
 .serif {
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .sans {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .uppercase {
@@ -1163,6 +1163,94 @@ a:hover {
 
 a:hover:visited {
   color: #445a74;
+}
+
+.main-menu__links {
+  padding: 3.25rem 3.25rem;
+  list-style-type: none;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  background: #f58300;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.main-menu__links.visible {
+  opacity: .9;
+}
+
+.main-menu__link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-menu__link:visited {
+  color: white;
+}
+
+.main-menu__link:visited:hover, .main-menu__link:visited:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-menu__link:hover, .main-menu__link:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-menu__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px 6px;
+  transition: border .3s ease-in-out;
+}
+
+.main-menu__close:hover {
+  border-color: #1a1a1a;
+}
+
+.main-menu__close:hover > * {
+  background: #1a1a1a;
+}
+
+.main-menu__close > * {
+  height: 2px;
+  background: white;
+  display: block;
+  transition: background .3s ease-in-out;
+}
+
+.main-menu__close--first {
+  width: 26px;
+}
+
+.main-menu__close--second {
+  width: 15px;
+}
+
+.main-menu__close--third {
+  width: 20px;
 }
 
 @media screen and (min-width: 48em){

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/blueprints.yaml',
-    'modified' => 1502938503,
+    'modified' => 1504370855,
     'data' => [
         'name' => 'Admin Panel',
         'version' => '1.5.2',

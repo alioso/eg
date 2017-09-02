@@ -1,11 +1,15 @@
-<nav id="menu">
+<nav id="mainMenu" class="main-menu">
   <div class="inner">
     <h2>{{ site.header.menu_name }}</h2>
-    <ul class="links">
+    <ul id="mainMenuUl" class="links main-menu__links sans">
       {% for page in pages.children %}
-        <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        <li><a class="main-menu__link" href="{{ page.url }}">{{ page.menu }}</a></li>
       {% endfor %}
     </ul>
-    <a href="#" class="close">Close</a>
+    <a href="javascript:" id="mainMenuClose" class="main-menu__close">
+      <span class="main-menu__close--first"></span>
+      <span class="main-menu__close--second"></span>
+      <span class="main-menu__close--third"></span>
+    </a>
   </div>
 </nav>
