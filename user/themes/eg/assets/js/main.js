@@ -14,11 +14,21 @@
 
 		var $mainMenuUl = $('#mainMenuUl');
 		var $mainMenuClose = $('#mainMenuClose');
+		var $page = $('.page');
+		var $mainVideo = $('.main-video');
 
     $mainMenuClose.on('click', function() {
     	$(this).toggleClass('active');
       $mainMenuUl.toggleClass('visible');
+      $page.toggleClass('passive');
+      $mainVideo.toggleClass('passive');
 		});
+
+    var rellax = new Rellax('.main-logo', {
+      speed: -2,
+      center: false,
+      round: true,
+    });
 
 	});
 

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/languages/el.yaml',
-    'modified' => 1502938472,
+    'modified' => 1504980918,
     'data' => [
         'MONTHS_OF_THE_YEAR' => [
             0 => 'Ιανουάριος',

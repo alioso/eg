@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/languages/en.yaml',
-    'modified' => 1504370855,
+    'modified' => 1504980939,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -598,6 +598,7 @@ return [
             'REDIS_SERVER_HELP' => 'The Redis server address',
             'REDIS_PORT' => 'Redis port',
             'REDIS_PORT_HELP' => 'The Redis server port',
+            'REDIS_PASSWORD' => 'Redis password/secret',
             'ALL' => 'All',
             'FROM' => 'from',
             'TO' => 'to',
@@ -684,7 +685,20 @@ return [
             'CONTENT_PADDING' => 'Content padding',
             'CONTENT_PADDING_HELP' => 'Enable/Disable content padding around content area to provide more space',
             'ENABLE_AUTO_METADATA' => 'Auto metadata from Exif',
-            'ENABLE_AUTO_METADATA_HELP' => 'Automatically generate metadata files for images with exif information'
+            'ENABLE_AUTO_METADATA_HELP' => 'Automatically generate metadata files for images with exif information',
+            '2FA_TITLE' => '2-Factor Authentication',
+            '2FA_INSTRUCTIONS' => '##### 2-Factor Authentication
+You have **2FA** enabled on this account. Please use your **2FA** app to enter the current **6-digit code** to complete the login process.',
+            '2FA_REGEN_HINT' => 'regenerating the secret this will require you to update your authenticator app',
+            '2FA_LABEL' => 'Admin Access',
+            '2FA_FAILED' => 'Invalid 2-Factor Authentication code, please try again...',
+            '2FA_ENABLED' => '2FA Enabled',
+            '2FA_CODE_INPUT' => '000000',
+            '2FA_SECRET' => '2FA Secret',
+            '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app.  Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
+            '2FA_REGENERATE' => 'Regenerate',
+            'CASE_INSENSITIVE_URLS' => 'Case Insensitive URLs',
+            'CASE_INSENSITIVE_URLS_HELP' => 'Enables Grav routing to locate resources regardless of text case.'
         ]
     ]
 ];

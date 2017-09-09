@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/blueprints.yaml',
-    'modified' => 1504370855,
+    'modified' => 1504980938,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.5.2',
+        'version' => '1.6.0',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
@@ -21,11 +21,11 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.0-rc.3'
+                'version' => '>=1.3.3'
             ],
             1 => [
                 'name' => 'form',
-                'version' => '>=2.4.0'
+                'version' => '>=2.9.0'
             ],
             2 => [
                 'name' => 'email',
@@ -33,7 +33,7 @@ return [
             ],
             3 => [
                 'name' => 'login',
-                'version' => '~2.0'
+                'version' => '>=2.4.0'
             ]
         ],
         'form' => [
@@ -62,6 +62,20 @@ return [
                     'label' => 'PLUGIN_ADMIN.ADMIN_CACHING',
                     'help' => 'PLUGIN_ADMIN.ADMIN_CACHING_HELP',
                     'highlight' => 0,
+                    'options' => [
+                        1 => 'PLUGIN_ADMIN.YES',
+                        0 => 'PLUGIN_ADMIN.NO'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'twofa_enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'PLUGIN_ADMIN.2FA_TITLE',
+                    'help' => 'PLUGIN_ADMIN.2FA_ENABLED_HELP',
+                    'default' => 1,
+                    'highlight' => 1,
                     'options' => [
                         1 => 'PLUGIN_ADMIN.YES',
                         0 => 'PLUGIN_ADMIN.NO'

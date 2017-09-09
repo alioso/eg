@@ -1,15 +1,21 @@
 <nav id="mainMenu" class="main-menu">
   <div class="wrapper--inner">
-    <h2>{{ site.header.menu_name }}</h2>
+    {#<h2>{{ site.header.menu_name }}</h2>#}
     <ul id="mainMenuUl" class="links main-menu__links sans">
       {% for page in pages.children %}
         <li><a class="main-menu__link" href="{{ page.url }}">{{ page.menu }}</a></li>
       {% endfor %}
     </ul>
-    <a href="javascript:" id="mainMenuClose" class="main-menu__close">
-      <span class="main-menu__close--first"></span>
-      <span class="main-menu__close--second"></span>
-      <span class="main-menu__close--third"></span>
+    <a href="javascript:" id="mainMenuClose" class="main-menu__trigger">
+      <div class="main-menu__closed">
+        <div class="main-menu__closed--left"></div>
+        <div class="main-menu__closed--right"></div>
+      </div>
+      <div class="main-menu__close">
+        <span class="main-menu__close--first"></span>
+        <span class="main-menu__close--second"></span>
+        <span class="main-menu__close--third"></span>
+      </div>
     </a>
   </div>
 </nav>

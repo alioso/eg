@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334
+class ComposerStaticInit829070c7e4309080b0958a0a655ad023
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -267,6 +267,9 @@ class ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334
         'DebugBar\\DataCollector\\TimeDataCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/TimeDataCollector.php',
         'DebugBar\\DataFormatter\\DataFormatter' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatter.php',
         'DebugBar\\DataFormatter\\DataFormatterInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatterInterface.php',
+        'DebugBar\\DataFormatter\\DebugBarVarDumper' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DebugBarVarDumper.php',
+        'DebugBar\\DataFormatter\\VarDumper\\DebugBarHtmlDumper' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/DebugBarHtmlDumper.php',
+        'DebugBar\\DataFormatter\\VarDumper\\SeekingData' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/SeekingData.php',
         'DebugBar\\DebugBar' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DebugBar.php',
         'DebugBar\\DebugBarException' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DebugBarException.php',
         'DebugBar\\HttpDriverInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/HttpDriverInterface.php',
@@ -1282,11 +1285,11 @@ class ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7ec1cf7d0598c059be4e2b2ce8cc5334::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit829070c7e4309080b0958a0a655ad023::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit829070c7e4309080b0958a0a655ad023::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit829070c7e4309080b0958a0a655ad023::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit829070c7e4309080b0958a0a655ad023::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit829070c7e4309080b0958a0a655ad023::$classMap;
 
         }, null, ClassLoader::class);
     }

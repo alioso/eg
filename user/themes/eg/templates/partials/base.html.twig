@@ -37,7 +37,7 @@
     {#{% endif %}#}
   {#</style>#}
 </head>
-<body>
+<body class="{{ page.header.body_classes }}">
 <!-- Page Wrapper -->
 <div id="page-wrapper">
   {% include 'partials/header.html.twig' %}
@@ -48,7 +48,7 @@
 
   {% include 'partials/footer.html.twig' %}
   <div id="video-container">
-    <video preload="auto" width="1440" height="810" autoplay loop muted>
+    <video class="main-video" preload="auto" width="1440" height="810" autoplay loop muted>
       <source src="user/themes/eg/assets/videos/eg.mp4" type="video/mp4">
       {#<source src="video.webm" type="video/webm">#}
     </video>
@@ -60,6 +60,7 @@
 {% do assets.addJs('theme://assets/js/jquery.min.js') %}
 {% do assets.addJs('theme://assets/js/main.js') %}
 {% do assets.addJs('theme://assets/js/video.js') %}
+{% do assets.addJs('theme://assets/js/rellax.min.js') %}
 {{ assets.js() }}
 
 </body>

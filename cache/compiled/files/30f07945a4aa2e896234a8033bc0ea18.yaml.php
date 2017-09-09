@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/blueprints/config/system.yaml',
-    'modified' => 1502938472,
+    'modified' => 1504980917,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -713,6 +713,11 @@ return [
                             'label' => 'PLUGIN_ADMIN.REDIS_PORT',
                             'help' => 'PLUGIN_ADMIN.REDIS_PORT_HELP',
                             'placeholder' => '6379'
+                        ],
+                        'cache.redis.password' => [
+                            'type' => 'text',
+                            'size' => 'small',
+                            'label' => 'PLUGIN_ADMIN.REDIS_PASSWORD'
                         ]
                     ]
                 ],
@@ -937,10 +942,13 @@ return [
                             ]
                         ],
                         'assets.collections' => [
-                            'type' => 'array',
+                            'type' => 'multilevel',
                             'label' => 'PLUGIN_ADMIN.COLLECTIONS',
                             'placeholder_key' => 'collection_name',
-                            'placeholder_value' => 'collection_path'
+                            'placeholder_value' => 'collection_path',
+                            'validate' => [
+                                'type' => 'array'
+                            ]
                         ]
                     ]
                 ],
@@ -1321,6 +1329,19 @@ return [
                             'label' => 'PLUGIN_ADMIN.ABSOLUTE_URLS',
                             'highlight' => 0,
                             'help' => 'PLUGIN_ADMIN.ABSOLUTE_URLS_HELP',
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'case_insensitive_urls' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.CASE_INSENSITIVE_URLS',
+                            'highlight' => 0,
+                            'help' => 'PLUGIN_ADMIN.CASE_INSENSITIVE_URLS_HELP',
                             'options' => [
                                 1 => 'PLUGIN_ADMIN.YES',
                                 0 => 'PLUGIN_ADMIN.NO'

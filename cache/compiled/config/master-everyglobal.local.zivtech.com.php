@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1504370862,
-    'checksum' => '6c4aba0212568049f919d8002191918a',
+    'timestamp' => 1504984234,
+    'checksum' => 'bad2671803c8de9ad22184ca81d853e5',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1504370857
+                'modified' => 1504984197
             ],
             'themes/sidewalk' => [
                 'file' => 'user/config/themes/sidewalk.yaml',
@@ -33,29 +33,29 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1504370855
+                'modified' => 1504980938
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1500466702
+                'modified' => 1504980948
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -63,15 +63,19 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1504370804
+                'modified' => 1504980955
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1500466702
+                'modified' => 1504980952
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1500466702
+            ],
+            'plugins/page-inject' => [
+                'file' => 'user/plugins/page-inject/page-inject.yaml',
+                'modified' => 1504984197
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -89,6 +93,7 @@ return [
                 'logo_text' => '',
                 'body_classes' => '',
                 'content_padding' => true,
+                'twofa_enabled' => true,
                 'sidebar' => [
                     'activate' => 'tab',
                     'hover_delay' => 100,
@@ -169,6 +174,7 @@ return [
             'form' => [
                 'enabled' => true,
                 'built_in_css' => true,
+                'refresh_prevention' => false,
                 'files' => [
                     'multiple' => false,
                     'limit' => 10,
@@ -185,12 +191,14 @@ return [
                 'enabled' => true,
                 'built_in_css' => true,
                 'route' => NULL,
+                'redirect_to_login' => true,
                 'redirect_after_login' => NULL,
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
                 'route_reset' => '/reset_password',
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
+                'route_unauthorized' => '/user_unauthorized',
                 'parent_acl' => false,
                 'protect_protected_page_media' => false,
                 'user_registration' => [
@@ -235,6 +243,11 @@ return [
                     2 => 'blue',
                     3 => 'green'
                 ]
+            ],
+            'page-inject' => [
+                'enabled' => true,
+                'active' => true,
+                'processed_content' => true
             ],
             'problems' => [
                 'enabled' => true,

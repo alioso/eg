@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/system/config/system.yaml',
-    'modified' => 1502938472,
+    'modified' => 1504980917,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -80,7 +80,7 @@ return [
             'etag' => false,
             'vary_accept_encoding' => false,
             'redirect_default_route' => false,
-            'redirect_default_code' => 301,
+            'redirect_default_code' => 302,
             'redirect_trailing_slash' => true,
             'ignore_files' => [
                 0 => '.DS_Store'

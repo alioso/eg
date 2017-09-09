@@ -10,10 +10,13 @@
     </header>
 
     <!-- Content -->
+    <div class="page"></div>
     <div class="wrapper--inner">
       <div class="inner">
-        {{ page.content }}
-        {% include 'partials/features.html.twig' with { 'features': page.header.features } %}
+        <div class="page">
+          {{ page.content }}
+        </div>
+        {#{% include 'partials/features.html.twig' with { 'features': page.header.features } %}#}
       </div>
     </div>
   </section>

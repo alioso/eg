@@ -6,6 +6,23 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  @include element-invisible;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity .2s ease-in-out;
+  opacity: 1;
+
+  &.passive {
+    opacity: 0;
+  }
+}
+
 .wrapper--inner {
   padding: 0 1em;
   position: relative;

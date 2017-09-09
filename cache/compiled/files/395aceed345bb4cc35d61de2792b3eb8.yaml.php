@@ -2,17 +2,19 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/login/login.yaml',
-    'modified' => 1500466702,
+    'modified' => 1504980952,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
         'route' => NULL,
+        'redirect_to_login' => true,
         'redirect_after_login' => NULL,
         'route_activate' => '/activate_user',
         'route_forgot' => '/forgot_password',
         'route_reset' => '/reset_password',
         'route_profile' => '/user_profile',
         'route_register' => '/user_register',
+        'route_unauthorized' => '/user_unauthorized',
         'parent_acl' => false,
         'protect_protected_page_media' => false,
         'user_registration' => [

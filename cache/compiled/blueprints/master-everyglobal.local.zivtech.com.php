@@ -1,35 +1,35 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1504370862,
-    'checksum' => '84518d038e165d69af43fd81fa3f919a',
+    'timestamp' => 1504984234,
+    'checksum' => 'b63aee13c6d2dabae4a7b5f5905cd6c4',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1502938472
+                'modified' => 1504980917
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1504370855
+                'modified' => 1504980938
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1500466702
+                'modified' => 1504980948
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -37,15 +37,19 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1504370804
+                'modified' => 1504980955
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1500466702
+                'modified' => 1504980952
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
                 'modified' => 1500466702
+            ],
+            'plugins/page-inject' => [
+                'file' => 'user/plugins/page-inject/blueprints.yaml',
+                'modified' => 1504984197
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -1018,6 +1022,13 @@ return [
                 'name' => 'system.cache.redis.port',
                 'validation' => 'loose'
             ],
+            'system.cache.redis.password' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_ADMIN.REDIS_PASSWORD',
+                'name' => 'system.cache.redis.password',
+                'validation' => 'loose'
+            ],
             'system.caching' => [
                 'type' => 'section',
                 'underline' => true,
@@ -1261,8 +1272,11 @@ return [
                 'validation' => 'loose'
             ],
             'system.assets.collections' => [
-                'type' => 'array',
+                'type' => 'multilevel',
                 'label' => 'PLUGIN_ADMIN.COLLECTIONS',
+                'validate' => [
+                    'type' => 'array'
+                ],
                 'name' => 'system.assets.collections',
                 'validation' => 'loose'
             ],
@@ -1687,6 +1701,20 @@ return [
                 'name' => 'system.absolute_urls',
                 'validation' => 'loose'
             ],
+            'system.case_insensitive_urls' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.CASE_INSENSITIVE_URLS',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.case_insensitive_urls',
+                'validation' => 'loose'
+            ],
             'system.param_sep' => [
                 'type' => 'select',
                 'size' => 'medium',
@@ -1772,6 +1800,21 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.admin.cache_enabled',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.twofa_enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.2FA_TITLE',
+                'default' => 1,
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.admin.twofa_enabled',
                 'validation' => 'loose'
             ],
             'plugins.admin.route' => [
@@ -2546,6 +2589,21 @@ return [
                 'name' => 'plugins.form.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.form.refresh_prevention' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FORM.REFRESH_PREVENTION',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.form.refresh_prevention',
+                'validation' => 'strict'
+            ],
             'plugins.form.general' => [
                 'type' => 'section',
                 'name' => 'plugins.form.general',
@@ -3060,6 +3118,58 @@ return [
                 'name' => 'plugins.markdown-notices.level_classes',
                 'validation' => 'strict'
             ],
+            'plugins.page-inject' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.page-inject.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.page-inject.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.page-inject.active' => [
+                'type' => 'toggle',
+                'label' => 'Activate Site-Wide',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.page-inject.active',
+                'validation' => 'strict'
+            ],
+            'plugins.page-inject.processed_content' => [
+                'type' => 'toggle',
+                'label' => 'Processed Content',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.page-inject.processed_content',
+                'validation' => 'strict'
+            ],
             'plugins.problems' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3212,7 +3322,8 @@ return [
                     'redis' => [
                         'socket' => 'system.cache.redis.socket',
                         'server' => 'system.cache.redis.server',
-                        'port' => 'system.cache.redis.port'
+                        'port' => 'system.cache.redis.port',
+                        'password' => 'system.cache.redis.password'
                     ]
                 ],
                 'twig' => [
@@ -3282,6 +3393,7 @@ return [
                 'pwd_regex' => 'system.pwd_regex',
                 'wrapped_site' => 'system.wrapped_site',
                 'absolute_urls' => 'system.absolute_urls',
+                'case_insensitive_urls' => 'system.case_insensitive_urls',
                 'param_sep' => 'system.param_sep',
                 'force_ssl' => 'system.force_ssl',
                 'custom_base_url' => 'system.custom_base_url'
@@ -3291,6 +3403,7 @@ return [
                     'Basics' => 'plugins.admin.Basics',
                     'enabled' => 'plugins.admin.enabled',
                     'cache_enabled' => 'plugins.admin.cache_enabled',
+                    'twofa_enabled' => 'plugins.admin.twofa_enabled',
                     'route' => 'plugins.admin.route',
                     'logo_text' => 'plugins.admin.logo_text',
                     'content_padding' => 'plugins.admin.content_padding',
@@ -3387,6 +3500,7 @@ return [
                     'enabled' => 'plugins.form.enabled',
                     'general' => 'plugins.form.general',
                     'built_in_css' => 'plugins.form.built_in_css',
+                    'refresh_prevention' => 'plugins.form.refresh_prevention',
                     'files' => [
                         'multiple' => 'plugins.form.files.multiple',
                         'destination' => 'plugins.form.files.destination',
@@ -3450,6 +3564,11 @@ return [
                     'enabled' => 'plugins.markdown-notices.enabled',
                     'built_in_css' => 'plugins.markdown-notices.built_in_css',
                     'level_classes' => 'plugins.markdown-notices.level_classes'
+                ],
+                'page-inject' => [
+                    'enabled' => 'plugins.page-inject.enabled',
+                    'active' => 'plugins.page-inject.active',
+                    'processed_content' => 'plugins.page-inject.processed_content'
                 ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
