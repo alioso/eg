@@ -48,9 +48,9 @@
 
   {% include 'partials/footer.html.twig' %}
   <div id="video-container">
-    <video class="main-video" preload="auto" width="1440" height="810" autoplay loop muted>
+    <video class="main-video" preload="auto" width="1440" height="810" autoplay loop muted playsinline>>
       <source src="user/themes/eg/assets/videos/eg.mp4" type="video/mp4">
-      {#<source src="video.webm" type="video/webm">#}
+      <source src="user/themes/eg/assets/videos/eg" type="video/webm">
     </video>
   </div>
 </div>
