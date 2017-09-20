@@ -11,12 +11,19 @@ h1 {
 }
 
 .page {
-  height: 100vh;
+  @include padding(2, 2, 4, 2);
+
+  margin-top: 20vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: opacity .2s ease-in-out;
   opacity: 1;
+
+  &.bg {
+    background: $blue-back;
+  }
 
   &.passive {
     opacity: 0;

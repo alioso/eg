@@ -682,7 +682,9 @@ h1 {
 }
 
 .page {
-  height: 100vh;
+  padding: 3.25rem 3.25rem 6.5rem;
+  margin-top: 20vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -696,6 +698,10 @@ h1 {
           justify-content: center;
   transition: opacity .2s ease-in-out;
   opacity: 1;
+}
+
+.page.bg {
+  background: rgba(176, 201, 199, 0.9);
 }
 
 .page.passive {
@@ -741,7 +747,9 @@ h1 {
 }
 
 .page {
-  height: 100vh;
+  padding: 3.25rem 3.25rem 6.5rem;
+  margin-top: 20vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -755,6 +763,10 @@ h1 {
           justify-content: center;
   transition: opacity .2s ease-in-out;
   opacity: 1;
+}
+
+.page.bg {
+  background: rgba(176, 201, 199, 0.9);
 }
 
 .page.passive {
