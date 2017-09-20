@@ -7,7 +7,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/monthly.json" afterPath="$PROJECT_DIR$/logs/popularity/monthly.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/totals.json" afterPath="$PROJECT_DIR$/logs/popularity/totals.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/visitors.json" afterPath="$PROJECT_DIR$/logs/popularity/visitors.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" afterPath="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" afterPath="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/css/main.css" afterPath="$PROJECT_DIR$/user/themes/eg/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss" afterPath="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss" afterPath="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss" afterPath="$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/templates/partials/navigation.html.twig" afterPath="$PROJECT_DIR$/user/themes/eg/templates/partials/navigation.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_typography.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_main-menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="69" column="11" lean-forward="false" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+            <state relative-caret-position="997">
+              <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -63,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+              <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -79,21 +74,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            <state relative-caret-position="166">
+              <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="456">
+              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_regions.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -102,18 +117,8 @@
       <file leaf-file-name="navigation.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/navigation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/04-pages/_home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -130,11 +135,14 @@
       <find>p</find>
       <find>h2</find>
       <find>mainMenuClose</find>
+      <find>#main</find>
+      <find>#mainMenu</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/user/themes/solid-state</dir>
       <dir>$PROJECT_DIR$/user/themes/eg/templates</dir>
       <dir>$PROJECT_DIR$/user/themes/eg</dir>
+      <dir>$PROJECT_DIR$/user/themes/eg/sass</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -175,9 +183,7 @@
         <option value="$PROJECT_DIR$/user/accounts/alban.yaml" />
         <option value="$PROJECT_DIR$/user/themes/eg/gulpfile.js" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_main.scss" />
-        <option value="$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/assets/js/video.js" />
-        <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_typography.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/header.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/eg/templates/modular/2_wrapper.html.twig" />
@@ -186,11 +192,13 @@
         <option value="$PROJECT_DIR$/user/themes/eg/templates/default.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/04-pages/_home.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss" />
-        <option value="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_videos.scss" />
+        <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
+        <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/navigation.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss" />
-        <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
+        <option value="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss" />
       </list>
     </option>
   </component>
@@ -216,7 +224,7 @@
     <dismissed value="$PROJECT_DIR$/user/themes/eg/vendor/scss/breakpoint/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1276" />
@@ -260,7 +268,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,7 +299,7 @@
               <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="eg" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="everyglobal" type="b2602c69:ProjectViewProjectNode" />
@@ -300,13 +307,24 @@
               <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="eg" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="videos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="02-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="everyglobal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="everyglobal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="eg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="02-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="navigation" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,7 +338,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/user/plugins/form/node_modules/eslint" />
-    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/header.html.twig&#10;video&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss&#10;la&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;var&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;l&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/assets/js/main.js&#10;va&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;header&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/header.html.twig&#10;video&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss&#10;la&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;var&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;l&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -370,21 +388,23 @@
       <workItem from="1504621494027" duration="478000" />
       <workItem from="1504732369508" duration="38000" />
       <workItem from="1504978088082" duration="9914000" />
-      <workItem from="1505582723443" duration="4000" />
+      <workItem from="1505582723443" duration="2148000" />
+      <workItem from="1505868198848" duration="1361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45802000" />
+    <option name="totallyTimeSpent" value="49307000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1276" height="777" extended-state="0" />
+    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20097245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20421393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -396,7 +416,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -625,20 +644,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/03-organisms/regions/_main.scss" />
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/video.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -691,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_videos.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -707,10 +704,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/main.js">
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -725,32 +738,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/navigation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="200">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="69" column="11" lean-forward="false" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        <state relative-caret-position="997">
+          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/03-organisms/_regions.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        <state relative-caret-position="200">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding />
         </state>
       </provider>

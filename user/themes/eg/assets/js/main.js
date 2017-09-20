@@ -16,12 +16,14 @@
 		var $mainMenuClose = $('#mainMenuClose');
 		var $page = $('.page');
 		var $mainVideo = $('.main-video');
+		var $content = $('#main');
 
     $mainMenuClose.on('click', function() {
     	$(this).toggleClass('active');
       $mainMenuUl.toggleClass('visible');
       $page.toggleClass('passive');
       $mainVideo.toggleClass('passive');
+      $content.toggleClass('behind');
 		});
 
     var rellax = new Rellax('.main-logo', {
