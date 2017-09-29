@@ -3,20 +3,24 @@
 {% block content %}
   <section id="main">
     <header>
-      <div class="wrapper--inner">
-        <h1>{{ page.header.title }}</h1>
-        {{ page.header.subtitle|markdown }}
+      <div class="wrapper__outer">
+        <div class="wrapper__inner">
+          <h1>{{ page.header.title }}</h1>
+          {{ page.header.subtitle|markdown }}
+        </div>
       </div>
     </header>
 
     <!-- Content -->
     <div class="page"></div>
-    <div class="wrapper--inner">
-      <div class="inner">
-        <div class="page bg">
-          {{ page.content }}
+    <div class="wrapper__outer">
+      <div class="wrapper__inner">
+        <div class="inner">
+          <div class="page bg">
+            {{ page.content }}
+          </div>
+          {#{% include 'partials/features.html.twig' with { 'features': page.header.features } %}#}
         </div>
-        {#{% include 'partials/features.html.twig' with { 'features': page.header.features } %}#}
       </div>
     </div>
   </section>
