@@ -10,6 +10,7 @@
       {% do assets.addJs('theme://assets/js/ie/html5shiv.js') %}
     {% endif %}
     {% do assets.addCss('theme://css/fonts.css', 103) %}
+    {% do assets.addCss('theme://css/jquery.fullPage.css', 103) %}
     {% do assets.addCss('theme://css/main.css', 103) %}
     {% if browser.getBrowser == 'msie' and browser.getVersion == 8 %}
       {% do assets.addCss('theme://assets/css/ie8.css') %}
@@ -47,12 +48,6 @@
   {% endblock %}
 
   {% include 'partials/footer.html.twig' %}
-  <div id="video-container">
-    <video class="main-video" preload="auto" width="1440" height="810" autoplay loop muted playsinline>>
-      <source src="user/themes/eg/assets/videos/eg.mp4" type="video/mp4">
-      <source src="user/themes/eg/assets/videos/eg" type="video/webm">
-    </video>
-  </div>
 </div>
 
 <!-- Scripts -->
@@ -60,6 +55,7 @@
 {% do assets.addJs('theme://assets/js/jquery.min.js') %}
 {% do assets.addJs('theme://assets/js/main.js') %}
 {% do assets.addJs('theme://assets/js/video.js') %}
+{% do assets.addJs('theme://assets/js/jquery.fullPage.min.js') %}
 {% do assets.addJs('theme://assets/js/rellax.min.js') %}
 {{ assets.js() }}
 

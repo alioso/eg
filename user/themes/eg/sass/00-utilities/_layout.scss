@@ -11,10 +11,9 @@ h1 {
 }
 
 .page {
-  @include padding(2, 2, 4, 2);
+  //@include padding(2, 2, 4, 2);
 
-  margin-top: 20vh;
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +21,7 @@ h1 {
   opacity: 1;
 
   &.bg {
-    background: $blue-back;
+    background: $jade;
   }
 
   &.passive {

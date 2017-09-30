@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1506654027,
-    'checksum' => 'd87891417f8eb13966ebef9c5e05164b',
+    'timestamp' => 1506737272,
+    'checksum' => 'cfc78cc57048ee5edde5c630652fdd96',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -27,6 +27,10 @@ return [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1504980938
             ],
+            'plugins/advanced-pagecache' => [
+                'file' => 'user/plugins/advanced-pagecache/blueprints.yaml',
+                'modified' => 1506661530
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
                 'modified' => 1504980948
@@ -46,10 +50,6 @@ return [
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
                 'modified' => 1500466702
-            ],
-            'plugins/page-inject' => [
-                'file' => 'user/plugins/page-inject/blueprints.yaml',
-                'modified' => 1504984197
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -2290,6 +2290,72 @@ return [
                 'name' => 'plugins.admin.popularity.history.visitors',
                 'validation' => 'loose'
             ],
+            'plugins.advanced-pagecache' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.advanced-pagecache.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin Status',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.advanced-pagecache.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.advanced-pagecache.enabled_with_params' => [
+                'type' => 'toggle',
+                'label' => 'Enabled with Params',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.advanced-pagecache.enabled_with_params',
+                'validation' => 'strict'
+            ],
+            'plugins.advanced-pagecache.enabled_with_query' => [
+                'type' => 'toggle',
+                'label' => 'Enabled with Query',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.advanced-pagecache.enabled_with_query',
+                'validation' => 'strict'
+            ],
+            'plugins.advanced-pagecache.whitelist' => [
+                'type' => 'array',
+                'value_only' => true,
+                'label' => 'Whitelist',
+                'name' => 'plugins.advanced-pagecache.whitelist',
+                'validation' => 'strict'
+            ],
+            'plugins.advanced-pagecache.blacklist' => [
+                'type' => 'array',
+                'value_only' => true,
+                'label' => 'Blacklist',
+                'name' => 'plugins.advanced-pagecache.blacklist',
+                'validation' => 'strict'
+            ],
             'plugins.email' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3118,58 +3184,6 @@ return [
                 'name' => 'plugins.markdown-notices.level_classes',
                 'validation' => 'strict'
             ],
-            'plugins.page-inject' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.page-inject.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.page-inject.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.page-inject.active' => [
-                'type' => 'toggle',
-                'label' => 'Activate Site-Wide',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.page-inject.active',
-                'validation' => 'strict'
-            ],
-            'plugins.page-inject.processed_content' => [
-                'type' => 'toggle',
-                'label' => 'Processed Content',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.page-inject.processed_content',
-                'validation' => 'strict'
-            ],
             'plugins.problems' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3461,6 +3475,13 @@ return [
                         'days_of_stats' => 'plugins.admin.dashboard.days_of_stats'
                     ]
                 ],
+                'advanced-pagecache' => [
+                    'enabled' => 'plugins.advanced-pagecache.enabled',
+                    'enabled_with_params' => 'plugins.advanced-pagecache.enabled_with_params',
+                    'enabled_with_query' => 'plugins.advanced-pagecache.enabled_with_query',
+                    'whitelist' => 'plugins.advanced-pagecache.whitelist',
+                    'blacklist' => 'plugins.advanced-pagecache.blacklist'
+                ],
                 'email' => [
                     'enabled' => 'plugins.email.enabled',
                     'mailer' => [
@@ -3564,11 +3585,6 @@ return [
                     'enabled' => 'plugins.markdown-notices.enabled',
                     'built_in_css' => 'plugins.markdown-notices.built_in_css',
                     'level_classes' => 'plugins.markdown-notices.level_classes'
-                ],
-                'page-inject' => [
-                    'enabled' => 'plugins.page-inject.enabled',
-                    'active' => 'plugins.page-inject.active',
-                    'processed_content' => 'plugins.page-inject.processed_content'
                 ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',

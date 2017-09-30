@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1506654027,
-    'checksum' => '6b9ae7f41d2fdc6f523cd8e9d61a7b35',
+    'timestamp' => 1506737272,
+    'checksum' => '9464c8c76789c2b483a11313de58c21d',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1504984197
+                'modified' => 1506666401
             ],
             'themes/sidewalk' => [
                 'file' => 'user/config/themes/sidewalk.yaml',
@@ -53,6 +53,10 @@ return [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1504980938
             ],
+            'plugins/advanced-pagecache' => [
+                'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
+                'modified' => 1506661530
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1504980948
@@ -72,10 +76,6 @@ return [
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1500466702
-            ],
-            'plugins/page-inject' => [
-                'file' => 'user/plugins/page-inject/page-inject.yaml',
-                'modified' => 1504984197
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -141,6 +141,16 @@ return [
                         'monthly' => 12,
                         'visitors' => 20
                     ]
+                ]
+            ],
+            'advanced-pagecache' => [
+                'enabled' => true,
+                'enabled_with_params' => true,
+                'enabled_with_query' => true,
+                'whitelist' => false,
+                'blacklist' => [
+                    0 => '/error',
+                    1 => '/random'
                 ]
             ],
             'email' => [
@@ -243,11 +253,6 @@ return [
                     2 => 'blue',
                     3 => 'green'
                 ]
-            ],
-            'page-inject' => [
-                'enabled' => true,
-                'active' => true,
-                'processed_content' => true
             ],
             'problems' => [
                 'enabled' => true,

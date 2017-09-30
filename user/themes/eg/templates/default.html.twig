@@ -12,12 +12,39 @@
     </header>
 
     <!-- Content -->
-    <div class="page"></div>
+    {% set work = page.find('/work') %}
     <div class="wrapper__outer">
       <div class="wrapper__inner">
         <div class="inner">
-          <div class="page bg">
-            {{ page.content }}
+          <div id="video-container">
+            <video class="main-video" preload="auto" width="1440" height="810" autoplay loop muted playsinline>>
+              <source src="user/themes/eg/assets/videos/eg.mp4" type="video/mp4">
+              <source src="user/themes/eg/assets/videos/eg" type="video/webm">
+            </video>
+            <div class="stns">
+              <span class="scroll-btn navbar-nav">
+                <a href="#" data-nav-section="welcome">
+                  <span class="mouse">
+                    <span>
+                    </span>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div id="fullpage">
+            <div class="section"></div>
+            <div class="page section">
+              <div class="site-max-width fh">
+                {{ page.content }}
+              </div>
+            </div>
+            <div class="page bg section">
+              <div class="site-max-width fh">
+                <h2 class="page-title">{{ work.title }}</h2>
+                {{ work.content }}
+              </div>
+            </div>
           </div>
           {#{% include 'partials/features.html.twig' with { 'features': page.header.features } %}#}
         </div>
