@@ -1,31 +1,31 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1506737272,
-    'checksum' => 'cfc78cc57048ee5edde5c630652fdd96',
+    'timestamp' => 1506757765,
+    'checksum' => '3ab71b0e6bc7d36f6c107cbaebf2fce0',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1504980938
+                'modified' => 1506757727
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/plugins/advanced-pagecache/blueprints.yaml',
@@ -45,7 +45,7 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1506654019
+                'modified' => 1506757720
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',

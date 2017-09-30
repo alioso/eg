@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/languages/th.yaml',
-    'modified' => 1504980939,
+    'modified' => 1506757727,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'นี่เป็นรุ่นทดลอง หากคุณใช้บนเว็บจริงคุณต้องยอมรับในความเสี่ยงนั้นเอง',

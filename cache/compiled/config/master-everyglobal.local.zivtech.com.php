@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1506737272,
-    'checksum' => '9464c8c76789c2b483a11313de58c21d',
+    'timestamp' => 1506757765,
+    'checksum' => 'eb912513774c91e0a4cb36d0faae4b96',
     'files' => [
         'user/config' => [
             'media' => [
@@ -33,25 +33,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1504980917
+                'modified' => 1506757754
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1504980938
+                'modified' => 1506757727
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
@@ -71,7 +71,7 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1506654019
+                'modified' => 1506757720
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
