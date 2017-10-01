@@ -23,7 +23,29 @@
       $page.toggleClass('passive');
       $mainVideo.toggleClass('passive');
       $content.toggleClass('behind');
+
+      if ($(this).hasClass('active')) {
+        $.fn.fullpage.setAllowScrolling(false);
+      }
+      else {
+        $.fn.fullpage.setAllowScrolling(true);
+      }
 		});
+
+    $('.main-menu__link').each(function () {
+      var link = $(this).text();
+      var href = link.toLowerCase();
+      $(this).attr('href', '#'+href);
+
+      $(this).on('click', function () {
+        $mainMenuClose.removeClass('active');
+        $mainMenuUl.removeClass('visible');
+        $page.removeClass('passive');
+        $mainVideo.removeClass('passive');
+        $content.removeClass('behind');
+        $.fn.fullpage.setAllowScrolling(true);
+      });
+    });
 
     // var rellax = new Rellax('.main-logo', {
     //   speed: +10,
@@ -36,7 +58,7 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors:['everyGlobal', 'about', 'work'],
+      anchors:['everyGlobal', 'about', 'work', 'team'],
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['firstSlide', 'secondSlide'],

@@ -1,5 +1,6 @@
 ---
 title: Home
+append_url_extension: '#everyGlobal'
 ---
 
 ![Every Global](eg_logo.png?classes=main-logo)

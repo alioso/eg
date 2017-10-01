@@ -14,7 +14,7 @@
     {#<h2>{{ site.header.menu_name }}</h2>#}
     <ul id="mainMenuUl" class="links main-menu__links sans">
       {% for page in pages.children %}
-        <li><a class="main-menu__link" href="{{ page.url }}">{{ page.menu }}</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="{{ page.url }}">{{ page.menu }}</a></li>
       {% endfor %}
     </ul>
   </div>

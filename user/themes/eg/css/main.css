@@ -1751,6 +1751,10 @@ video.passive {
   opacity: .9;
 }
 
+.main-menu__item {
+  margin: 0 0.8125rem;
+}
+
 .main-menu__link {
   color: white;
   text-decoration: none;
