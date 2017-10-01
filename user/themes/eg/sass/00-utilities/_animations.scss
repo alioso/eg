@@ -75,6 +75,15 @@
   }
 }
 
+@keyframes zIndexOff {
+  from {
+    z-index: 2;
+  }
+  to {
+    z-index: -1;
+  }
+}
+
 .hover-stat {
   position: relative;
   display: inline-block;

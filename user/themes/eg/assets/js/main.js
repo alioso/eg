@@ -107,4 +107,39 @@
     });
 	});
 
+	$('.eg-modal').on('scroll', function(e) {
+    $.fn.fullpage.setAllowScrolling(false);
+  });
+
+  var $openLink = $('.openModal');
+
+  $('.work-list a').on('click', function () {
+    openModal();
+  });
+
+  $('.eg-modal__close').on('click', function() {
+    closeModal();
+  });
+
+  function openModal() {
+    var $openLinkUrl = $(this).attr('url');
+    var $modalTarget = $('.eg-modal__container').attr('id');
+
+    if ($openLinkUrl = $modalTarget) {
+      $('.eg-modal')
+        .addClass('active')
+        .removeClass('hidden');
+      $('.modal').attr('id', $(this)).addClass('active')
+        .addClass('active')
+        .removeClass('hidden');
+    }
+  }
+
+  function closeModal() {
+    $('.modal, .eg-modal')
+      .removeClass('active')
+      .addClass('hidden');
+    $.fn.fullpage.setAllowScrolling(true);
+  }
+
 })(jQuery);

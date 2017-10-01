@@ -1,0 +1,84 @@
+.eg-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $jade;
+  overflow: auto;
+  color: #333;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(.25, .25);
+  transition: opacity .3s ease-in-out, transform .2s linear, ;
+
+  &.active {
+    z-index: 5;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  &.hidden {
+    transform: scale(.25, .25);
+    opacity: 0;
+    animation: zIndexOff 1.5s forwards;
+  }
+
+  &__container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .wrapper--inner {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  &__close {
+    $size: 40px;
+
+    height: $size;
+    width: $size;
+    position: relative;
+    box-sizing: border-box;
+    line-height: $size;
+    display: inline-block;
+    z-index: 6;
+    margin: 0 auto;
+
+    &__wrapper {
+      top: 2em;
+      text-align: center;
+      background: $jade;
+    }
+
+    &:before, &:after {
+      $width: 40px;
+      $height: 3px;
+
+      transform: rotate(-45deg);
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -$height/2;
+      margin-left: -$width/2;
+      display: block;
+      height: $height;
+      width: $width;
+      background-color: #fff;
+      transition: all 0.25s ease-out;
+    }
+
+    &:after {
+      transform: rotate(-135deg);
+    }
+
+    &:hover {
+
+      &:before, &:after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
 
     <!-- Content -->
     {% set work = page.find('/work') %}
+    {% set artContent = page.find('/work/art-content') %}
     <div class="wrapper__outer">
       <div class="wrapper__inner">
         <div class="inner">
@@ -35,12 +36,12 @@
           <div id="fullpage">
             <div class="section"></div>
             <div class="page section">
-              <div class="site-max-width fh">
+              <div class="wrapper--inner fh">
                 {{ page.content }}
               </div>
             </div>
             <div class="page bg section">
-              <div class="site-max-width fh">
+              <div class="wrapper--inner fh">
                 <h2 class="page-title">{{ work.title }}</h2>
                 {{ work.content }}
               </div>
@@ -51,4 +52,13 @@
       </div>
     </div>
   </section>
+  <div class="eg-modal">
+    <div class="eg-modal__close__wrapper wrapper--inner">
+      <a href="javascript:" class="eg-modal__close"></a>
+    </div>
+    <div id="artContent" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ artContent.title }}</h2>
+      {{ artContent.content }}
+    </div>
+  </div>
 {% endblock %}
