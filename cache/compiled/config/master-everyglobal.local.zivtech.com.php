@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1506760744,
-    'checksum' => '7ada29ad37834a6283ed53efc97b313a',
+    'timestamp' => 1506832099,
+    'checksum' => '9fea2022b34789a5811a810a26e7a8c3',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1506760734
+                'modified' => 1506831990
             ],
             'themes/sidewalk' => [
                 'file' => 'user/config/themes/sidewalk.yaml',

@@ -1,6 +1,6 @@
 .stns {
-  position: absolute;
-  bottom: 3.5rem;
+  position: fixed;
+  bottom: 4rem;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -45,10 +45,7 @@
   display: block;
   width: 35px;
   height: 55px;
-  margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  margin: 0 auto;
   border: 2px solid white;
   border-radius: 23px;
 }

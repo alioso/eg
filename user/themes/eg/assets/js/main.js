@@ -108,17 +108,17 @@
 	});
 
 	$('.eg-modal').on('scroll', function(e) {
-    $.fn.fullpage.setAllowScrolling(false);
-  });
 
-  var $openLink = $('.openModal');
+  });
 
   $('.work-list a').on('click', function () {
     openModal();
+    $.fn.fullpage.setAllowScrolling(false);
   });
 
   $('.eg-modal__close').on('click', function() {
     closeModal();
+    $.fn.fullpage.setAllowScrolling(true);
   });
 
   function openModal() {
@@ -139,7 +139,6 @@
     $('.modal, .eg-modal')
       .removeClass('active')
       .addClass('hidden');
-    $.fn.fullpage.setAllowScrolling(true);
   }
 
 })(jQuery);

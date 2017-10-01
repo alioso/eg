@@ -13,6 +13,7 @@
 
     <!-- Content -->
     {% set work = page.find('/work') %}
+    {% set team = page.find('/team') %}
     {% set artContent = page.find('/work/art-content') %}
     <div class="wrapper__outer">
       <div class="wrapper__inner">
@@ -40,10 +41,16 @@
                 {{ page.content }}
               </div>
             </div>
-            <div class="page bg section">
+            <div class="page bg--jade section">
               <div class="wrapper--inner fh">
                 <h2 class="page-title">{{ work.title }}</h2>
                 {{ work.content }}
+              </div>
+            </div>
+            <div class="page bg--tangerine section">
+              <div class="wrapper--inner fh">
+                <h2 class="page-title">{{ team.title }}</h2>
+                {{ team.content }}
               </div>
             </div>
           </div>

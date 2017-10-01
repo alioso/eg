@@ -372,7 +372,7 @@ small {
 }
 
 .site-max-width {
-  max-width: 50em;
+  max-width: 53.125em;
   margin: 0 auto;
 }
 
@@ -821,8 +821,12 @@ h1 {
   position: relative;
 }
 
-.page.bg {
+.page.bg--jade {
   background: #43d9cd;
+}
+
+.page.bg--tangerine {
+  background: #f58300;
 }
 
 .page.passive {
@@ -830,11 +834,11 @@ h1 {
 }
 
 .wrapper--inner {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
   position: relative;
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 53.125em;
   width: 100%;
 }
 
@@ -984,8 +988,12 @@ h1 {
   position: relative;
 }
 
-.page.bg {
+.page.bg--jade {
   background: #43d9cd;
+}
+
+.page.bg--tangerine {
+  background: #f58300;
 }
 
 .page.passive {
@@ -993,11 +1001,11 @@ h1 {
 }
 
 .wrapper--inner {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
   position: relative;
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 53.125em;
   width: 100%;
 }
 
@@ -1134,7 +1142,7 @@ h1 {
 }
 
 .site-max-width {
-  max-width: 50em;
+  max-width: 53.125em;
   margin: 0 auto;
 }
 
@@ -1420,8 +1428,8 @@ h1 {
 }
 
 .stns {
-  position: absolute;
-  bottom: 3.5rem;
+  position: fixed;
+  bottom: 4rem;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -1466,8 +1474,7 @@ h1 {
   display: block;
   width: 35px;
   height: 55px;
-  margin: 0 auto 20px;
-  box-sizing: border-box;
+  margin: 0 auto;
   border: 2px solid white;
   border-radius: 23px;
 }
