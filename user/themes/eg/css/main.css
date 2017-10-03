@@ -1549,14 +1549,6 @@ h3.page-subtitle {
   line-height: 1.2;
 }
 
-h3.intersect {
-  font-size: 2rem;
-  font-family: "Dosis", sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: white;
-}
-
 h4.page-subtitle {
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
@@ -1967,21 +1959,6 @@ video.passive {
 .main-text {
   font-size: 1.2rem;
   color: white;
-}
-
-.team-list__title {
-  font-size: 1.2rem;
-  font-family: "Dosis", sans-serif;
-  text-transform: uppercase;
-  padding-right: 5px;
-}
-
-.team-list .desc {
-  display: inline-block;
-}
-
-.team-list a {
-  color: #333;
 }
 
 .work-list__title {
