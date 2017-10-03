@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/everyglobal/user/plugins/admin/languages/hu.yaml',
-    'modified' => 1506757727,
+    'modified' => 1506995574,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Ez egy béta kiadás! Éles környezetben csak saját felelősségre használd...',
