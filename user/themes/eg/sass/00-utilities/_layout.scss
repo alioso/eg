@@ -34,6 +34,10 @@ h1 {
     &--tangerine {
       background: $tangerine;
     }
+
+    &--grey {
+      background: $grey;
+    }
   }
 
   &.passive {

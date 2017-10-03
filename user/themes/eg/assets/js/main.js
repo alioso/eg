@@ -58,7 +58,7 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors:['everyGlobal', 'about', 'work', 'team'],
+      anchors:['everyGlobal', 'about', 'work', 'team', 'contact'],
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -148,11 +148,14 @@
 
     $('body').addClass('overlayed');
     $('.eg-modal')
-      .addClass('active')
-      .removeClass('hidden');
+      .removeClass('active')
+      .addClass('hidden');
     $($openLinkUrl)
       .addClass('active')
-      .removeClass('hidden');
+      .removeClass('hidden')
+      .parent()
+        .addClass('active')
+        .removeClass('hidden');
     $.fn.fullpage.setAllowScrolling(false);
   });
 
@@ -161,7 +164,9 @@
     $('.eg-modal, .eg-modal__container')
       .removeClass('active')
       .addClass('hidden');
+
     $.fn.fullpage.setAllowScrolling(true);
+
     if ($(this).hasClass('work')) {
       $.fn.fullpage.moveTo('work');
     }

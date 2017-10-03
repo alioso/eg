@@ -12,13 +12,23 @@
     </header>
 
     <!-- Content -->
+
+    <!-- Landing Pages -->
     {% set work = page.find('/work') %}
     {% set team = page.find('/team') %}
+    {% set contact = page.find('/contact') %}
+
+    <!-- Work Pages -->
     {% set artContent = page.find('/work/art-contents') %}
     {% set eventContent = page.find('/work/event-contents') %}
     {% set cbc = page.find('/work/creative-business-consulting') %}
     {% set bdc = page.find('/work/branding-and-design-consulting') %}
     {% set ci = page.find('/work/creative-investment') %}
+
+    <!-- Team Pages -->
+    {% set rami = page.find('/team/rami-nuseir') %}
+    {% set jill = page.find('/team/jill-buchanan') %}
+
     <div class="wrapper__outer">
       <div class="wrapper__inner">
         <div class="inner">
@@ -57,8 +67,13 @@
                 {{ team.content }}
               </div>
             </div>
+            <div class="page bg--grey section">
+              <div class="wrapper--inner fh">
+                <h2 class="page-title">{{ contact.title }}</h2>
+                {{ contact.content }}
+              </div>
+            </div>
           </div>
-          {#{% include 'partials/features.html.twig' with { 'features': page.header.features } %}#}
         </div>
       </div>
     </div>
@@ -74,6 +89,31 @@
     <div id="event-contents" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ eventContent.title }}</h2>
       {{ eventContent.content }}
+    </div>
+    <div id="creative-business-consulting" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ cbc.title }}</h2>
+      {{ cbc.content }}
+    </div>
+    <div id="branding-and-design-consulting" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ bdc.title }}</h2>
+      {{ bdc.content }}
+    </div>
+    <div id="creative-investment" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ ci.title }}</h2>
+      {{ ci.content }}
+    </div>
+  </div>
+  <div class="eg-modal eg-modal__team">
+    <div class="eg-modal__close__wrapper wrapper--inner">
+      <a href="javascript:" class="eg-modal__close team"></a>
+    </div>
+    <div id="rami-nuseir" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ rami.title }}</h2>
+      {{ rami.content }}
+    </div>
+    <div id="jill-buchanan" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ jill.title }}</h2>
+      {{ jill.content }}
     </div>
     <div id="creative-business-consulting" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ cbc.title }}</h2>

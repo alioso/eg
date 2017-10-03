@@ -851,6 +851,10 @@ h1 {
   background: #f58300;
 }
 
+.page.bg--grey {
+  background: #878787;
+}
+
 .page.passive {
   opacity: 0;
 }
@@ -1020,6 +1024,10 @@ h1 {
 
 .page.bg--tangerine {
   background: #f58300;
+}
+
+.page.bg--grey {
+  background: #878787;
 }
 
 .page.passive {
@@ -1704,7 +1712,6 @@ video.passive {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #43d9cd;
   overflow-y: auto;
   color: #333;
   opacity: 0;
@@ -1729,6 +1736,7 @@ video.passive {
   -webkit-transform: scale(0.25, 0.25);
       -ms-transform: scale(0.25, 0.25);
           transform: scale(0.25, 0.25);
+  z-index: -1;
   opacity: 0;
   -webkit-animation: zIndexOff 1.5s forwards;
           animation: zIndexOff 1.5s forwards;
@@ -1804,11 +1812,27 @@ video.passive {
           transform: rotate(0deg);
 }
 
+.eg-modal__work {
+  background: #43d9cd;
+}
+
 .eg-modal__work a:link, .eg-modal__work a:visited {
   color: #f58300;
 }
 
 .eg-modal__work a:link:hover, .eg-modal__work a:visited:hover {
+  text-decoration: underline;
+}
+
+.eg-modal__team {
+  background: #f58300;
+}
+
+.eg-modal__team a:link, .eg-modal__team a:visited {
+  color: white;
+}
+
+.eg-modal__team a:link:hover, .eg-modal__team a:visited:hover {
   text-decoration: underline;
 }
 
@@ -2000,6 +2024,37 @@ video.passive {
 
 #main.behind {
   z-index: 0;
+}
+
+.contact-list {
+  margin-top: 1.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-list__title {
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+
+.contact-list .desc {
+  display: inline-block;
+}
+
+.contact-list a {
+  color: white;
 }
 
 .main-logo {
@@ -2237,5 +2292,11 @@ video.passive {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
+  }
+  .contact-list{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
