@@ -17,6 +17,8 @@
     {% set artContent = page.find('/work/art-contents') %}
     {% set eventContent = page.find('/work/event-contents') %}
     {% set cbc = page.find('/work/creative-business-consulting') %}
+    {% set bdc = page.find('/work/branding-and-design-consulting') %}
+    {% set ci = page.find('/work/creative-investment') %}
     <div class="wrapper__outer">
       <div class="wrapper__inner">
         <div class="inner">
@@ -76,6 +78,14 @@
     <div id="creative-business-consulting" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ cbc.title }}</h2>
       {{ cbc.content }}
+    </div>
+    <div id="branding-and-design-consulting" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ bdc.title }}</h2>
+      {{ bdc.content }}
+    </div>
+    <div id="creative-investment" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ ci.title }}</h2>
+      {{ ci.content }}
     </div>
   </div>
 {% endblock %}
