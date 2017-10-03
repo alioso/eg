@@ -68,7 +68,7 @@
 
       //Scrolling
       css3: true,
-      scrollingSpeed: 700,
+      scrollingSpeed: 800,
       autoScrolling: true,
       fitToSection: true,
       fitToSectionDelay: 1000,
@@ -87,7 +87,7 @@
       resetSliders: false,
       fadingEffect: false,
       normalScrollElements: '#element1, .element2',
-      scrollOverflow: false,
+      scrollOverflow: true,
       scrollOverflowReset: false,
       scrollOverflowOptions: null,
       touchSensitivity: 15,
