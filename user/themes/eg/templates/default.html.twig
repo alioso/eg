@@ -14,7 +14,9 @@
     <!-- Content -->
     {% set work = page.find('/work') %}
     {% set team = page.find('/team') %}
-    {% set artContent = page.find('/work/art-content') %}
+    {% set artContent = page.find('/work/art-contents') %}
+    {% set eventContent = page.find('/work/event-contents') %}
+    {% set cbc = page.find('/work/creative-business-consulting') %}
     <div class="wrapper__outer">
       <div class="wrapper__inner">
         <div class="inner">
@@ -59,13 +61,21 @@
       </div>
     </div>
   </section>
-  <div class="eg-modal">
+  <div class="eg-modal eg-modal__work">
     <div class="eg-modal__close__wrapper wrapper--inner">
-      <a href="javascript:" class="eg-modal__close"></a>
+      <a href="#work" class="eg-modal__close"></a>
     </div>
-    <div id="artContent" class="eg-modal__container wrapper--inner">
+    <div id="art-contents" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ artContent.title }}</h2>
       {{ artContent.content }}
+    </div>
+    <div id="event-contents" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ eventContent.title }}</h2>
+      {{ eventContent.content }}
+    </div>
+    <div id="creative-business-consulting" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ cbc.title }}</h2>
+      {{ cbc.content }}
     </div>
   </div>
 {% endblock %}

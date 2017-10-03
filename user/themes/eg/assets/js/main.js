@@ -133,34 +133,27 @@
 
   });
 
-  $('.work-list a').on('click', function () {
-    openModal();
+  $('.openModal').on('click', function () {
+    var $openLinkUrl = $(this).attr('href');
+
+    console.log($openLinkUrl);
+
+    $('body').addClass('overlayed');
+    $('.eg-modal')
+      .addClass('active')
+      .removeClass('hidden');
+    $($openLinkUrl)
+      .addClass('active')
+      .removeClass('hidden');
     $.fn.fullpage.setAllowScrolling(false);
   });
 
   $('.eg-modal__close').on('click', function() {
-    closeModal();
-    $.fn.fullpage.setAllowScrolling(true);
-  });
-
-  function openModal() {
-    var $openLinkUrl = $(this).attr('url');
-    var $modalTarget = $('.eg-modal__container').attr('id');
-
-    if ($openLinkUrl = $modalTarget) {
-      $('.eg-modal')
-        .addClass('active')
-        .removeClass('hidden');
-      $('.modal').attr('id', $(this)).addClass('active')
-        .addClass('active')
-        .removeClass('hidden');
-    }
-  }
-
-  function closeModal() {
-    $('.modal, .eg-modal')
+    $('body').removeClass('overlayed');
+    $('.eg-modal, .eg-modal__container')
       .removeClass('active')
       .addClass('hidden');
-  }
+    $.fn.fullpage.setAllowScrolling(true);
+  });
 
 })(jQuery);

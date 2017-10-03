@@ -5,12 +5,12 @@
   width: 100vw;
   height: 100vh;
   background: $jade;
-  overflow: auto;
+  overflow-y: auto;
   color: #333;
   opacity: 0;
   z-index: -1;
   transform: scale(.25, .25);
-  transition: opacity .3s ease-in-out, transform .2s linear, ;
+  transition: opacity .3s ease-in-out, transform .2s linear;
 
   &.active {
     z-index: 5;
@@ -25,8 +25,15 @@
   }
 
   &__container {
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-bottom: 3rem;
+    position: relative;
+
+    @include element-invisible;
+
+    &.active {
+      @include element-invisible-off;
+    }
   }
 
   .wrapper--inner {
@@ -39,7 +46,7 @@
 
     height: $size;
     width: $size;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     line-height: $size;
     display: inline-block;
@@ -78,6 +85,17 @@
 
       &:before, &:after {
         transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__work {
+
+    a:link, a:visited {
+      color: $tangerine;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

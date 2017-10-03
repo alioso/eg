@@ -795,6 +795,10 @@ body {
   overflow-x: hidden;
 }
 
+body.overlayed {
+  overflow-y: auto !important;
+}
+
 h1 {
   position: absolute;
   height: 0;
@@ -960,6 +964,10 @@ h1 {
 
 body {
   overflow-x: hidden;
+}
+
+body.overlayed {
+  overflow-y: auto !important;
 }
 
 h1 {
@@ -1532,11 +1540,13 @@ h2.page-title.sm {
 }
 
 h3.page-subtitle {
+  padding: 0.8125rem 0;
   margin-top: 0;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: .05rem;
+  line-height: 1.2;
 }
 
 h4.page-subtitle {
@@ -1546,6 +1556,13 @@ h4.page-subtitle {
   margin-bottom: 0;
   color: #FFF;
   letter-spacing: .07rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+h4.page-subtitle .title-link {
+  font-size: 0.8rem;
+  font-weight: normal;
 }
 
 ul li {
@@ -1638,16 +1655,16 @@ video.passive {
   width: 100vw;
   height: 100vh;
   background: #43d9cd;
-  overflow: auto;
+  overflow-y: auto;
   color: #333;
   opacity: 0;
   z-index: -1;
   -webkit-transform: scale(0.25, 0.25);
       -ms-transform: scale(0.25, 0.25);
           transform: scale(0.25, 0.25);
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.2s linear;
-  transition: opacity 0.3s ease-in-out, transform 0.2s linear;
-  transition: opacity 0.3s ease-in-out, transform 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity .3s ease-in-out, -webkit-transform .2s linear;
+  transition: opacity .3s ease-in-out, transform .2s linear;
+  transition: opacity .3s ease-in-out, transform .2s linear, -webkit-transform .2s linear;
 }
 
 .eg-modal.active {
@@ -1668,8 +1685,22 @@ video.passive {
 }
 
 .eg-modal__container {
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
+  position: relative;
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.eg-modal__container.active {
+  position: relative;
+  height: auto;
+  width: auto;
+  overflow: inherit;
+  clip: none;
 }
 
 .eg-modal .wrapper--inner {
@@ -1680,7 +1711,7 @@ video.passive {
 .eg-modal__close {
   height: 40px;
   width: 40px;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   line-height: 40px;
   display: inline-block;
@@ -1721,6 +1752,14 @@ video.passive {
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.eg-modal__work a:link, .eg-modal__work a:visited {
+  color: #f58300;
+}
+
+.eg-modal__work a:link:hover, .eg-modal__work a:visited:hover {
+  text-decoration: underline;
 }
 
 .main-menu__links {
@@ -1920,6 +1959,17 @@ video.passive {
 .main-text {
   font-size: 1.2rem;
   color: white;
+}
+
+.work-list__title {
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+
+.work-list .desc {
+  display: inline-block;
 }
 
 .work-list a {

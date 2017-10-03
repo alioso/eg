@@ -39,11 +39,13 @@ h2.page-title {
 }
 
 h3.page-subtitle {
+  @include padding(.5, 0);
   margin-top: 0;
   font-family: $sans;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: .05rem;
+  line-height: 1.2;
 }
 
 h4.page-subtitle {
@@ -53,6 +55,14 @@ h4.page-subtitle {
   margin-bottom: 0;
   color: #FFF;
   letter-spacing: .07rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+  .title-link {
+    @include font-size(.8);
+
+    font-weight: normal;
+  }
 }
 
 ul {
