@@ -377,7 +377,25 @@ small {
 }
 
 .fh {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fkh {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -1155,7 +1173,25 @@ h1 {
 }
 
 .fh {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fkh {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -1443,6 +1479,12 @@ h1 {
   color: #fff;
   font-size: 50px;
   z-index: 1;
+  opacity: 0;
+}
+
+.stns.visible {
+  transition: opacity .2s linear;
+  opacity: 1;
 }
 
 .scroll-btn {

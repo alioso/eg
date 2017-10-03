@@ -53,7 +53,7 @@
     //   round: true
     // });
 
-
+    var $stns = $('.stns');
     $('#fullpage').fullpage({
       //Navigation
       menu: '#menu',
@@ -119,8 +119,22 @@
       lazyLoading: true,
 
       //events
-      onLeave: function(index, nextIndex, direction){},
-      afterLoad: function(anchorLink, index){},
+      onLeave: function(index, nextIndex, direction){
+        if (index <= 2) {
+          $stns.addClass('visible');
+        }
+        else {
+          $stns.removeClass('visible');
+        }
+      },
+      afterLoad: function(anchorLink, index){
+        if (index <= 2) {
+          $stns.addClass('visible');
+        }
+        else {
+          $stns.removeClass('visible');
+        }
+      },
       afterRender: function(){},
       afterResize: function(){},
       afterResponsive: function(isResponsive){},
@@ -129,14 +143,8 @@
     });
 	});
 
-	$('.eg-modal').on('scroll', function(e) {
-
-  });
-
   $('.openModal').on('click', function () {
     var $openLinkUrl = $(this).attr('href');
-
-    console.log($openLinkUrl);
 
     $('body').addClass('overlayed');
     $('.eg-modal')
@@ -154,6 +162,12 @@
       .removeClass('active')
       .addClass('hidden');
     $.fn.fullpage.setAllowScrolling(true);
+    if ($(this).hasClass('work')) {
+      $.fn.fullpage.moveTo('work');
+    }
+    else if ($(this).hasClass('team')) {
+      $.fn.fullpage.moveTo('team');
+    }
   });
 
 })(jQuery);

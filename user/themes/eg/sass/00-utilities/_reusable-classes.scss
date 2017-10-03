@@ -147,7 +147,19 @@
 }
 
 .fh {
+  @include padding-top(2);
+  @include padding-bottom(2);
+
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fkh {
+  @include padding-top(2);
+  @include padding-bottom(2);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
