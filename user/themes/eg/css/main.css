@@ -1694,7 +1694,7 @@ a:hover:visited {
   background: #000;
 }
 
-video {
+.main-video {
   display: block;
   width: 100%;
   height: auto;
@@ -1702,8 +1702,12 @@ video {
   transition: opacity .2s ease-in-out;
 }
 
-video.passive {
+.main-video.passive {
   opacity: .2;
+}
+
+.fp-viewing-about .main-video {
+  opacity: .1;
 }
 
 .eg-modal {
@@ -1762,8 +1766,8 @@ video.passive {
 }
 
 .eg-modal .wrapper--inner {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .eg-modal__close {
@@ -2292,6 +2296,10 @@ video.passive {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
+  }
+  .eg-modal .wrapper--inner{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .contact-list{
     -webkit-box-orient: horizontal;

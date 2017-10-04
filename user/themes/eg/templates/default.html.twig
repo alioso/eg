@@ -28,6 +28,9 @@
     <!-- Team Pages -->
     {% set rami = page.find('/team/rami-nuseir') %}
     {% set jill = page.find('/team/jill-buchanan') %}
+    {% set carlos = page.find('/team/carlos-alomar') %}
+    {% set steve = page.find('/team/steve-savage') %}
+    {% set shinjoo = page.find('/team/shinjoo-cho') %}
 
     <div class="wrapper__outer">
       <div class="wrapper__inner">
@@ -115,17 +118,17 @@
       <h2 class="page-title sm">{{ jill.title }}</h2>
       {{ jill.content }}
     </div>
-    <div id="creative-business-consulting" class="eg-modal__container wrapper--inner">
-      <h2 class="page-title sm">{{ cbc.title }}</h2>
-      {{ cbc.content }}
+    <div id="carlos-alomar" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ carlos.title }}</h2>
+      {{ carlos.content }}
     </div>
-    <div id="branding-and-design-consulting" class="eg-modal__container wrapper--inner">
-      <h2 class="page-title sm">{{ bdc.title }}</h2>
-      {{ bdc.content }}
+    <div id="steve-savage" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ steve.title }}</h2>
+      {{ steve.content }}
     </div>
-    <div id="creative-investment" class="eg-modal__container wrapper--inner">
-      <h2 class="page-title sm">{{ ci.title }}</h2>
-      {{ ci.content }}
+    <div id="shinjoo-cho" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ shinjoo.title }}</h2>
+      {{ shinjoo.content }}
     </div>
   </div>
 {% endblock %}

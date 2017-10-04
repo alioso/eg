@@ -120,6 +120,7 @@
 
       //events
       onLeave: function(index, nextIndex, direction){
+        console.log(index);
         if (index <= 2) {
           $stns.addClass('visible');
         }

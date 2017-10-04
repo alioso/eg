@@ -8,7 +8,7 @@
   background: #000;
 }
 
-video {
+.main-video {
   display: block;
   width: 100%;
   height: auto;
@@ -17,5 +17,12 @@ video {
 
   &.passive {
     opacity: .2;
+  }
+}
+
+.fp-viewing-about {
+
+  .main-video {
+    opacity: .1;
   }
 }
