@@ -109,7 +109,7 @@
       responsiveWidth: 0,
       responsiveHeight: 0,
       responsiveSlides: false,
-      parallax: false,
+      parallax: true,
       parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
       //Custom selectors
@@ -120,7 +120,6 @@
 
       //events
       onLeave: function(index, nextIndex, direction){
-        console.log(index);
         if (index <= 2) {
           $stns.addClass('visible');
         }

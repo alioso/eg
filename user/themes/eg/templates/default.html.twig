@@ -31,6 +31,10 @@
     {% set carlos = page.find('/team/carlos-alomar') %}
     {% set steve = page.find('/team/steve-savage') %}
     {% set shinjoo = page.find('/team/shinjoo-cho') %}
+    {% set won = page.find('/team/won-lee') %}
+    {% set andrew = page.find('/team/andrew-turf') %}
+    {% set sean = page.find('/team/sean-o-neill') %}
+    {% set alexandra = page.find('/team/alexandra-akira') %}
 
     <div class="wrapper__outer">
       <div class="wrapper__inner">
@@ -129,6 +133,22 @@
     <div id="shinjoo-cho" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ shinjoo.title }}</h2>
       {{ shinjoo.content }}
+    </div>
+    <div id="won-lee" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ won.title }}</h2>
+      {{ won.content }}
+    </div>
+    <div id="andrew-turf" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ andrew.title }}</h2>
+      {{ andrew.content }}
+    </div>
+    <div id="sean-o-neill" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ sean.title }}</h2>
+      {{ sean.content }}
+    </div>
+    <div id="alexandra-akira" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ alexandra.title }}</h2>
+      {{ alexandra.content }}
     </div>
   </div>
 {% endblock %}

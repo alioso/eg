@@ -47,6 +47,13 @@ h3.page-subtitle {
   font-weight: 900;
   letter-spacing: .05rem;
   line-height: 1.2;
+
+  .sm {
+    @include font-size(.9);
+
+    margin-bottom: 0;
+    font-weight: 400;
+  }
 }
 
 h3.intersect {

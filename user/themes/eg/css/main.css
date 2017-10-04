@@ -395,7 +395,7 @@ small {
 
 .fkh {
   padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
+  padding-bottom: 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -844,7 +844,7 @@ h1 {
 }
 
 .page.bg--jade {
-  background: #43d9cd;
+  background-color: #43d9cd;
 }
 
 .page.bg--tangerine {
@@ -1019,7 +1019,7 @@ h1 {
 }
 
 .page.bg--jade {
-  background: #43d9cd;
+  background-color: #43d9cd;
 }
 
 .page.bg--tangerine {
@@ -1199,7 +1199,7 @@ h1 {
 
 .fkh {
   padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
+  padding-bottom: 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   -js-display: flex;
@@ -1486,13 +1486,14 @@ h1 {
   text-align: center;
   color: #fff;
   font-size: 50px;
-  z-index: 1;
+  z-index: -1;
   opacity: 0;
 }
 
 .stns.visible {
   transition: opacity .2s linear;
   opacity: 1;
+  z-index: 1;
 }
 
 .scroll-btn {
@@ -1597,6 +1598,12 @@ h3.page-subtitle {
   font-weight: 900;
   letter-spacing: .05rem;
   line-height: 1.2;
+}
+
+h3.page-subtitle .sm {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 
 h3.intersect {

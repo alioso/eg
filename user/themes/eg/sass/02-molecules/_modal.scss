@@ -39,7 +39,7 @@
   .wrapper--inner {
     padding-left: 1rem;
     padding-right: 1rem;
-    
+
     @include breakpoint($bp-768) {
       padding-left: 4rem;
       padding-right: 4rem;

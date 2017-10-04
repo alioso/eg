@@ -158,7 +158,7 @@
 
 .fkh {
   @include padding-top(2);
-  @include padding-bottom(2);
+  @include padding-bottom(8);
 
   display: flex;
   flex-direction: column;
