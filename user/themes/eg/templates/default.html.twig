@@ -35,6 +35,8 @@
     {% set andrew = page.find('/team/andrew-turf') %}
     {% set sean = page.find('/team/sean-o-neill') %}
     {% set alexandra = page.find('/team/alexandra-akira') %}
+    {% set sonja = page.find('/team/sonja-nuttall') %}
+    {% set peter = page.find('/team/peter-knell') %}
 
     <div class="wrapper__outer">
       <div class="wrapper__inner">
@@ -76,6 +78,7 @@
             </div>
             <div class="page bg--grey section">
               <div class="wrapper--inner fh">
+                <img src="user/themes/eg/images/logo-solo.png" class="contact-list__logo" />
                 <h2 class="page-title">{{ contact.title }}</h2>
                 {{ contact.content }}
               </div>
@@ -149,6 +152,14 @@
     <div id="alexandra-akira" class="eg-modal__container wrapper--inner">
       <h2 class="page-title sm">{{ alexandra.title }}</h2>
       {{ alexandra.content }}
+    </div>
+    <div id="sonja-nuttall" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ sonja.title }}</h2>
+      {{ sonja.content }}
+    </div>
+    <div id="peter-knell" class="eg-modal__container wrapper--inner">
+      <h2 class="page-title sm">{{ peter.title }}</h2>
+      {{ peter.content }}
     </div>
   </div>
 {% endblock %}

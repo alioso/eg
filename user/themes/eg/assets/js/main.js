@@ -88,8 +88,14 @@
       fadingEffect: false,
       normalScrollElements: '#element1, .element2',
       scrollOverflow: true,
-      scrollOverflowReset: false,
-      scrollOverflowOptions: null,
+      scrollOverflowReset: true,
+      scrollOverflowOptions: {
+        scrollbars: false,
+        momentum: false,
+        mouseWheel: true,
+        deceleration: 0.00009,
+        mouseWheelSpeed: 5
+      },
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,
       bigSectionsDestination: null,
@@ -109,7 +115,7 @@
       responsiveWidth: 0,
       responsiveHeight: 0,
       responsiveSlides: false,
-      parallax: true,
+      parallax: false,
       parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
       //Custom selectors
@@ -146,7 +152,6 @@
   $('.openModal').on('click', function () {
     var $openLinkUrl = $(this).attr('href');
 
-    $('body').addClass('overlayed');
     $('.eg-modal')
       .removeClass('active')
       .addClass('hidden');
@@ -160,7 +165,6 @@
   });
 
   $('.eg-modal__close').on('click', function() {
-    $('body').removeClass('overlayed');
     $('.eg-modal, .eg-modal__container')
       .removeClass('active')
       .addClass('hidden');

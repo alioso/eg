@@ -18,6 +18,23 @@
     padding-right: 5px;
   }
 
+  &__email {
+    @include padding(2, 1, 1, 1);
+
+    text-align: center;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+    max-width: 100px;
+    position: relative;
+    top: -3rem;
+  }
+
   .desc {
     display: inline-block;
   }

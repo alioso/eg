@@ -395,18 +395,7 @@ small {
 
 .fkh {
   padding-top: 3.25rem;
-  padding-bottom: 13rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -js-display: flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-bottom: 16.25rem;
 }
 
 .padd-all-05 {
@@ -813,10 +802,6 @@ body {
   overflow-x: hidden;
 }
 
-body.overlayed {
-  overflow-y: auto !important;
-}
-
 h1 {
   position: absolute;
   height: 0;
@@ -986,10 +971,6 @@ h1 {
 
 body {
   overflow-x: hidden;
-}
-
-body.overlayed {
-  overflow-y: auto !important;
 }
 
 h1 {
@@ -1199,18 +1180,7 @@ h1 {
 
 .fkh {
   padding-top: 3.25rem;
-  padding-bottom: 13rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -js-display: flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-bottom: 16.25rem;
 }
 
 .padd-all-05 {
@@ -2058,6 +2028,22 @@ a:hover:visited {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
   padding-right: 5px;
+}
+
+.contact-list__email {
+  padding: 3.25rem 1.625rem 1.625rem;
+  text-align: center;
+}
+
+.contact-list__email a {
+  color: white;
+}
+
+.contact-list__logo {
+  margin: 0 auto;
+  max-width: 100px;
+  position: relative;
+  top: -3rem;
 }
 
 .contact-list .desc {

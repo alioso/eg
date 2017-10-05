@@ -18,4 +18,6 @@ Content Developers, Designers, Digital Strategists, Brand/Retail Consultants, an
 	<li><a href="#andrew-turf" class="hover-stat openModal"><span class="team-list__title white bold">Andrew Turf</span><span class="desc" data-content="CBRE">CBRE</span></a></li>
     <li><a href="#sean-o-neill" class="hover-stat openModal"><span class="team-list__title white bold">Sean O’Neill</span><span class="desc" data-content="Sun Capital">Sun Capital</span></a></li>
     <li><a href="#alexandra-akira" class="hover-stat openModal"><span class="team-list__title white bold">Alexandra Akira</span><span class="desc" data-content="Next Level Productions">Next Level Productions</span></a></li>
+    <li><a href="#sonja-nuttall" class="hover-stat openModal"><span class="team-list__title white bold">Sonja Nuttall</span><span class="desc" data-content="Cine Moi">Cine Moi</span></a></li>
+    <li><a href="#peter-knell" class="hover-stat openModal"><span class="team-list__title white bold">Peter Knell</span><span class="desc" data-content="WME|IMG">WME|IMG</span></a></li>
 </ul>

@@ -158,11 +158,10 @@
 
 .fkh {
   @include padding-top(2);
-  @include padding-bottom(8);
+  @include padding-bottom(10);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+  //position: absolute;
 }
 
 //
