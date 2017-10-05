@@ -149,7 +149,7 @@
     });
 	});
 
-  $('.openModal').on('click', function () {
+  $('.openModal').on('click', function (e) {
     var $openLinkUrl = $(this).attr('href');
 
     $('.eg-modal')
@@ -161,6 +161,7 @@
       .parent()
         .addClass('active')
         .removeClass('hidden');
+    e.preventDefault();
     $.fn.fullpage.setAllowScrolling(false);
   });
 
