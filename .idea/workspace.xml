@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="379e0c47-6261-4ce0-a574-64ba5bc2bbc1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eg2.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/daily.json" afterPath="$PROJECT_DIR$/logs/popularity/daily.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/monthly.json" afterPath="$PROJECT_DIR$/logs/popularity/monthly.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/totals.json" afterPath="$PROJECT_DIR$/logs/popularity/totals.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/popularity/visitors.json" afterPath="$PROJECT_DIR$/logs/popularity/visitors.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/accounts/alban.yaml" afterPath="$PROJECT_DIR$/user/accounts/alban.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" afterPath="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/css/fonts.css" afterPath="$PROJECT_DIR$/user/themes/eg/css/fonts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/css/main.css" afterPath="$PROJECT_DIR$/user/themes/eg/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/_modal.scss" afterPath="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" afterPath="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +28,7 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="220">
               <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding />
             </state>
@@ -34,8 +38,8 @@
       <file leaf-file-name="default.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="80" column="88" lean-forward="false" selection-start-line="80" selection-start-column="88" selection-end-line="80" selection-end-column="88" />
+            <state relative-caret-position="595">
+              <caret line="163" column="8" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="163" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -44,8 +48,28 @@
       <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="535">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alban.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/accounts/alban.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shinjoo.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/accounts/shinjoo.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -64,10 +88,10 @@
       <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="-297">
+              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
               <folding>
-                <marker date="1507177489000" expanded="true" signature="474:478" ph="{...}" />
+                <marker date="1507340417000" expanded="true" signature="474:478" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,38 +100,18 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
+            <state relative-caret-position="526">
+              <caret line="159" column="4" lean-forward="false" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_videos.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_videos.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_modal.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_modal.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/02-molecules/_modal.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -153,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user/themes/solid-state/assets/sass/layout/_wrapper.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/css/eg.css" />
         <option value="$PROJECT_DIR$/user/themes/eg/blueprints.yaml" />
         <option value="$PROJECT_DIR$/user/themes/solid-state/templates/default.html.twig" />
@@ -198,12 +201,13 @@
         <option value="$PROJECT_DIR$/user/themes/eg/sass/04-pages/_team.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_buttons.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_reusable-classes.scss" />
-        <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss" />
-        <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
-        <option value="$PROJECT_DIR$/user/themes/eg/templates/default.html.twig" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/04-pages/_contact.scss" />
+        <option value="$PROJECT_DIR$/user/themes/eg/templates/default.html.twig" />
+        <option value="$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss" />
         <option value="$PROJECT_DIR$/user/themes/eg/assets/js/main.js" />
         <option value="$PROJECT_DIR$/user/themes/eg/sass/02-molecules/_modal.scss" />
+        <option value="$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig" />
+        <option value="$PROJECT_DIR$/user/accounts/shinjoo.yaml" />
       </list>
     </option>
   </component>
@@ -284,6 +288,12 @@
               <item name="everyglobal" type="b2602c69:ProjectViewProjectNode" />
               <item name="everyglobal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="everyglobal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="everyglobal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="accounts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="everyglobal" type="b2602c69:ProjectViewProjectNode" />
@@ -429,7 +439,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/user/plugins/form/node_modules/eslint" />
-    <property name="SearchEverywhereHistoryKey" value="contact&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/04-pages/_contact.scss&#10;mod&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;reu&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_reusable-classes.scss&#10;bu&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_buttons.scss&#10;team&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/04-pages/_team.scss&#10;re&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_reusable-classes.scss&#10;ty&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_typography.scss&#10;ba&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/base.html.twig&#10;video&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_mod&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;_pag&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/assets/sass/base/_page.scss&#10;.fh&#9;null&#9;null&#10;_butt&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_buttons.scss&#10;base&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/base.html.twig&#10;_modal&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;var&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;_ty&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_typography.scss&#10;scrip&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/vendor/bower/raw/jquery/src/ajax/script.js&#10;main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/assets/js/main.js&#10;_layou&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;vide&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_vide&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;nav&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/navigation.html.twig&#10;va&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;header&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/header.html.twig&#10;_main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss&#10;la&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;l&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss" />
+    <property name="SearchEverywhereHistoryKey" value="mod&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;base&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/base.html.twig&#10;contact&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/04-pages/_contact.scss&#10;reu&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_reusable-classes.scss&#10;bu&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_buttons.scss&#10;team&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/04-pages/_team.scss&#10;re&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_reusable-classes.scss&#10;ty&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_typography.scss&#10;ba&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/base.html.twig&#10;video&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_mod&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;_pag&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/assets/sass/base/_page.scss&#10;.fh&#9;null&#9;null&#10;_butt&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_buttons.scss&#10;_modal&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/_modal.scss&#10;var&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;_ty&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_typography.scss&#10;scrip&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/vendor/bower/raw/jquery/src/ajax/script.js&#10;main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/assets/js/main.js&#10;_layou&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;vide&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;_vide&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/01-atoms/_videos.scss&#10;nav&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/navigation.html.twig&#10;va&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_variables.scss&#10;header&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/templates/partials/header.html.twig&#10;_main&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/02-molecules/navigation/_main-menu.scss&#10;la&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss&#10;l&#9;FILE&#9;file:///Users/albanbailly/Documents/vagrant/16/www/everyglobal/user/themes/eg/sass/00-utilities/_layout.scss" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -439,11 +449,11 @@
       <recent name="$PROJECT_DIR$/user/themes/eg/templates/partials" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/accounts" />
       <recent name="$PROJECT_DIR$/user/themes/eg/images" />
       <recent name="$PROJECT_DIR$/user/themes/eg/assets/js" />
       <recent name="$PROJECT_DIR$/user/themes/eg/assets/css" />
       <recent name="$PROJECT_DIR$/user/themes/eg/assets/videos" />
-      <recent name="$PROJECT_DIR$/user/themes/eg/sass/01-atoms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -490,12 +500,12 @@
       <workItem from="1506347786978" duration="92000" />
       <workItem from="1506653701269" duration="11605000" />
       <workItem from="1506987586036" duration="5894000" />
-      <workItem from="1507172982506" duration="4466000" />
+      <workItem from="1507172982506" duration="5942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121477000" />
+    <option name="totallyTimeSpent" value="122953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
@@ -550,24 +560,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/vendor/scss/gutenberg/_gutenberg-typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/gulpfile.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/accounts/alban.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -824,48 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="80" column="88" lean-forward="false" selection-start-line="80" selection-start-column="88" selection-end-line="80" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <marker date="1507177489000" expanded="true" signature="474:478" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_reusable-classes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="160" column="18" lean-forward="false" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/01-atoms/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -882,10 +836,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/default.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="163" column="8" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="163" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user/themes/eg/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
+        <state relative-caret-position="526">
+          <caret line="159" column="4" lean-forward="false" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <marker date="1507340417000" expanded="true" signature="474:478" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/00-utilities/_reusable-classes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="160" column="18" lean-forward="false" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -893,7 +881,31 @@
     <entry file="file://$PROJECT_DIR$/user/themes/eg/sass/02-molecules/_modal.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/themes/eg/templates/partials/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/accounts/alban.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/accounts/shinjoo.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>

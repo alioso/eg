@@ -47,12 +47,6 @@
       });
     });
 
-    // var rellax = new Rellax('.main-logo', {
-    //   speed: +10,
-    //   center: false,
-    //   round: true
-    // });
-
     var $stns = $('.stns');
     $('#fullpage').fullpage({
       //Navigation
@@ -161,6 +155,7 @@
       .parent()
         .addClass('active')
         .removeClass('hidden');
+
     e.preventDefault();
     $.fn.fullpage.setAllowScrolling(false);
   });
